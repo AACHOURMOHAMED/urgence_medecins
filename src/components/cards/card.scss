@@ -1,0 +1,30 @@
+$primary-color:#0F547E;
+$sec-color:#DF1416;
+$primary-font:'Lexend';
+
+
+.card--primary{
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    font-family: $primary-font;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.356);
+    
+}
+.card--default{
+    width: 400px;
+    min-width: 390px;
+    max-height: 197px;
+    min-height: 197px;
+
+    color: white;
+    font-weight: 600;
+
+}
+
+.card--large{
+    width: 730px;
+    height: 320px;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,54 @@
+:root{
+    --primary-color :#DF1416;
+    --primary-font :  'Lexend', sans-serif;
+    --secondery-font : 'Bellefair', serif;
+    
+}
+
+.btn--primary{
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    color: #fff;
+   
+}
+
+.btn--secondery{
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.btn--small{
+    font-size: 12px;
+    padding: 5px 25px;
+    color: white;
+    cursor:  pointer;
+  
+}
+
+.btn--small:hover{
+    background-color: transparent;
+    color: #DF1416;
+}
+.btn--med{
+    font-size: 26px;
+    padding: 9px 25px;
+}
+
+.btn--large:hover{
+    background-color: transparent;
+    color: #DF1416;
+}
+
+.btn--med:hover{
+    background-color: transparent;
+    color: #DF1416;
+}
+.btn--large{
+    font-size: 29px;
+    padding: 15px 35px;
+}
