@@ -32,21 +32,23 @@
 
 .btn--small:hover{
     background-color: transparent;
-    color: #DF1416;
+    color: white;
 }
 .btn--med{
-    font-size: 26px;
+    font-size: 18px;
     padding: 9px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 .btn--large:hover{
     background-color: transparent;
-    color: #DF1416;
+    color: white;
 }
 
 .btn--med:hover{
     background-color: transparent;
-    color: #DF1416;
+    color: white;
 }
 .btn--large{
     font-size: 29px;

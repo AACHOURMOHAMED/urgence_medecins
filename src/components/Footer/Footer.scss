@@ -1,0 +1,99 @@
+$primary-color:#0F547E;
+$sec-color:#DF1416;
+$primary-font:'Lexend';
+* {
+    /* Calculation */
+    --diff: calc(var(--max-size) - var(--min-size));
+    --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
+  }
+
+#Footer{
+    height: 628px;
+    background-color: #022840;
+    width: 100%;
+    font-family: $primary-font;
+    position: relative;
+    .content{
+        display: flex;
+        justify-content: space-between;
+     
+        padding-top: 60px;
+        .left-content{
+            line-height: 28px;
+        
+            .logo{
+                width: 174px;
+            }
+            .text{
+                width: 653px;
+                font-size: 16px;
+                color: white;
+
+            }
+
+            .button-footer{
+                display: flex;
+                align-items: center;
+             
+               margin: 4em;
+               .call{
+                   color: white;
+                   font-size: 25px;
+                   margin-right: 60px;
+               }
+
+               .btn{
+                   font-size: 25px;
+                   
+                   .icon{
+                       margin-right: 20px;
+                   }
+               }
+            }
+        }
+
+        .right-content{
+            display: flex;
+            margin-top: 80px;
+            .firstlink{
+                line-height: 31px;
+                .link{
+                    display: block;
+                    line-height: 39px;
+                    color: white;
+                    text-decoration: none;
+
+                }
+            }
+            .slink{
+                line-height: 39px;
+                margin-left: 50px;
+                line-height: 20px;
+                .link{
+                    display: block;
+                    line-height: 31px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    }
+    .bottom-footer{
+        color: white;
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        padding-bottom: 20px;
+         width: 1200px;
+        margin: auto;
+        .text-bottom{
+            text-align: center;
+            letter-spacing: 1px;
+           
+            span{
+                color:$sec-color;
+            }
+        }
+    }
+}

@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { Component} from 'react';
+import { FacebookProvider, Page } from 'react-facebook';
 import { Card } from '../cards/card';
 import back from '../images/back-medecins.jpg';
 import './Acceuil.css'
+import 'normalize.css';
 import {FaHeartbeat} from 'react-icons/fa'
 import {ImArrowRight2} from 'react-icons/im'
 import {FaPhoneAlt} from 'react-icons/fa'
 import image1 from '../images/image1.png'
 import { Button } from '../buttons/Button';
+
+
 const Acceuil = () => {
+
+
+  
   return(
+      
     <div className='container-body'>
     {/* // this is main section  */}
     <section className="main" id="main">
@@ -106,6 +114,58 @@ const Acceuil = () => {
             </div>
         </div>
     </section>
+    {/*The end of sos medecins section keitra*/}
+
+
+    {/*vous etes praticien section */}
+
+    <section id="showcase-praticien">
+        <img src={back} alt="backgound of the page" className="backk" />
+        <div className="colorgrad"></div>
+
+        <div className="container">
+            <div className="content-praticien">
+                <h1 className="title">VOUS ÊTES PRATICIEN ?</h1>
+                <p className="titre">Rejoignez les équipes de SOS MÉDECINS Kenitra</p>
+                <div className="text-content">
+                    <p className="text">
+                        Vous souhaitez mettre vos compétences médicales au service de particuliers en Île-de-maroc ?.
+                        Nous recherchons régulièrement des médecins généralistes et urgentistes pour assurer des visites à domicile. Ainsi que des téléopérateurs pour la prise en charge des demandes de nos patients et la régulation médicale.
+                    </p>
+                    <div className="button-text">
+                     <Button className='btn-text' buttonStyle={'btn--primary'} buttonSize={'btn--med'}>
+                        je depose candidature
+                    </Button>   
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    {/*This is the end of vous etes praticien section*/}
+    {/*This is the begin of page facebook*/}
+
+    <section id="showcase-facebook">
+
+        <div className="content">
+            <FacebookProvider  appId="346420270442551">
+                <Page href="https://www.facebook.com/أفضل-ألعاب-الحاسوب-و-الأندرويد-مجانا-675234572628729/" tabs="timeline"  />
+            </FacebookProvider>  
+        </div>
+    
+
+
+   
+
+    </section>
+
+   
+
+    {/*This is the end of page*/}
+   
+
     </div>
   );
 };

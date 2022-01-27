@@ -15,7 +15,7 @@ $primary-font:'Lexend';
     margin-top: 10px;
     .btn{
         margin: 20px;
-
+      z-index: 1111;
         
         
         .icon{
@@ -24,7 +24,7 @@ $primary-font:'Lexend';
     }
   }
 
-  
+
   .Navbar > .nav-logo {
     z-index: 99999;
     font-weight: 700;
@@ -79,7 +79,7 @@ $primary-font:'Lexend';
   
 
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1100px) {
     .Navbar  .nav-items {
 
       position: fixed;

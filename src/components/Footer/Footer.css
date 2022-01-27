@@ -1,0 +1,113 @@
+* {
+  /* Calculation */
+  --diff: calc(var(--max-size) - var(--min-size));
+  --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420)));
+  /* Ranges from 421px to 1199px */
+}
+
+#Footer {
+  height: 628px;
+  background-color: #022840;
+  width: 100%;
+  font-family: "Lexend";
+  position: relative;
+}
+
+#Footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 60px;
+}
+
+#Footer .content .left-content {
+  line-height: 28px;
+}
+
+#Footer .content .left-content .logo {
+  width: 174px;
+}
+
+#Footer .content .left-content .text {
+  width: 653px;
+  font-size: 16px;
+  color: white;
+}
+
+#Footer .content .left-content .button-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4em;
+}
+
+#Footer .content .left-content .button-footer .call {
+  color: white;
+  font-size: 25px;
+  margin-right: 60px;
+}
+
+#Footer .content .left-content .button-footer .btn {
+  font-size: 25px;
+}
+
+#Footer .content .left-content .button-footer .btn .icon {
+  margin-right: 20px;
+}
+
+#Footer .content .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+#Footer .content .right-content .firstlink {
+  line-height: 31px;
+}
+
+#Footer .content .right-content .firstlink .link {
+  display: block;
+  line-height: 39px;
+  color: white;
+  text-decoration: none;
+}
+
+#Footer .content .right-content .slink {
+  line-height: 39px;
+  margin-left: 50px;
+  line-height: 20px;
+}
+
+#Footer .content .right-content .slink .link {
+  display: block;
+  line-height: 31px;
+  color: white;
+  text-decoration: none;
+}
+
+#Footer .bottom-footer {
+  color: white;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 1200px;
+  margin: auto;
+}
+
+#Footer .bottom-footer .text-bottom {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#Footer .bottom-footer .text-bottom span {
+  color: #DF1416;
+}
+/*# sourceMappingURL=Footer.css.map */

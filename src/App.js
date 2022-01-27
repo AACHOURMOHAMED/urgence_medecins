@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import Header  from './components/Header/Header';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route, Redirect} from 'react-router-dom'
 import './App.css';
+import 'normalize.css';
+
 import Acceuil from "./components/Accueil/Acceuil";
+import Footer from "./components/Footer/Footer";
+import { Sommesnous } from "./components/Que-sommes-nous/sommesnous";
 
 
 function App() {
@@ -10,7 +14,23 @@ function App() {
     <Router>
 
      <Header/>
-      <Acceuil/>
+     <Switch>
+     
+
+      <Route exact path='/' component={Acceuil}>
+        <Acceuil/>
+      </Route>
+      <Route exact path='/acceuil'>
+        <Acceuil/>
+      </Route>
+      <Route  path='/Sommenous'>
+        <Sommesnous/>
+      </Route>
+     </Switch>
+      
+      
+      <Footer/>
+
     </Router>
     
   );
