@@ -3,8 +3,7 @@ import { FacebookProvider, Page } from 'react-facebook';
 import { Card } from '../cards/card';
 import back from '../images/back-medecins.jpg';
 import './Acceuil.css'
-import 'normalize.css';
-import {FaHeartbeat} from 'react-icons/fa'
+ import {FaHeartbeat} from 'react-icons/fa'
 import {ImArrowRight2} from 'react-icons/im'
 import {FaPhoneAlt} from 'react-icons/fa'
 import image1 from '../images/image1.png'

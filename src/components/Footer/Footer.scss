@@ -11,12 +11,13 @@ $primary-font:'Lexend';
     height: 628px;
     background-color: #022840;
     width: 100%;
+    height: 100%;
     font-family: $primary-font;
     position: relative;
     .content{
         display: flex;
         justify-content: space-between;
-     
+        flex-wrap: wrap;
         padding-top: 60px;
         .left-content{
             line-height: 28px;
@@ -55,6 +56,7 @@ $primary-font:'Lexend';
         .right-content{
             display: flex;
             margin-top: 80px;
+            margin-bottom: 60px;
             .firstlink{
                 line-height: 31px;
                 .link{
@@ -82,10 +84,8 @@ $primary-font:'Lexend';
     .bottom-footer{
         color: white;
         bottom: 0;
-        position: absolute;
         text-align: center;
         padding-bottom: 20px;
-         width: 1200px;
         margin: auto;
         .text-bottom{
             text-align: center;

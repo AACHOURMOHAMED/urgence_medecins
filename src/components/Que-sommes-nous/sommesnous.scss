@@ -82,9 +82,12 @@ $primary-font:'Lexend';
         .cardd{
             width: 226px;
             height: 190px;
+            margin: auto;
             background-color: rgba(255, 255, 255, 0.466);
             backdrop-filter: blur(15px);
             border-radius: 10px;
+            box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+
         }
     }
 
@@ -97,6 +100,7 @@ $primary-font:'Lexend';
             font-size: 35px;
             font-weight: 600;
             margin-right: 50px;
+            padding-bottom: 40px;
             font-family: $primary-font;
             color: $sec-color;
         }
@@ -129,7 +133,160 @@ $primary-font:'Lexend';
     .content-nous{
         margin-bottom: 150px;
         text-align: center;
+        font-family: $primary-font;
+        margin-top: 200px;
+        .top-title{
+            font-size: 24px;
+            color: #313131;
+            font-weight: normal;
+        }
+        .title{
+            font-size: 49px;
+            color: $primary-color;
+            font-weight: normal;
+        }
+
+
+        .notre-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            font-family: $primary-font;
+            margin-top: 100px;
+            .notre{
+                width: 340px;
+                margin:  auto;
+                margin-bottom: 100px;
+                .title{
+                    font-size: 26px;
+                    color: $sec-color;
+                    text-align: center; 
+                    text-transform: uppercase;
+                }
+                .text{
+                    text-align: justify;
+                    font-family: $primary-font;
+                    letter-spacing: 1px;
+                    line-height: 26px;
+                   
+                }
+            }
+        }
     }
+
+
+  #showcase-points{
+      .content-pointskenitra{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        .image1{
+            float: left;
+            margin-bottom: 50px;
+            
+        }
+        .title{
+            color: $primary-color;
+            font-size: 41px;
+            letter-spacing: 3px;
+            font-family: $primary-font;
+            font-weight: bold;
+            margin-left: 50px;
+            max-width: 767px;
+        }
+        .content-points{margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3em;
+            max-width: 1000px;
+            .card-point{
+                margin-left: 50px;
+                position: relative;
+                width: 350px;
+                height: 251px;
+                background-color: white;
+                border-radius:15px;
+                box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+                .number{
+                    font-family: $primary-font;
+                    font-size: 152px;
+                    position: absolute;
+                    right: 0;
+                    margin-top: 0px;
+                    margin-right: 15px;
+                    opacity: .5;
+                    color:#D1EDFF;
+                }
+                .text{
+                    position: absolute;
+                    padding-top: 190px;
+                    margin-left: 20px;
+                    font-size: 19.5px;
+                    color: #313131;
+                    text-align: center;
+                    font-family: $primary-font;
+
+                }
+            }
+        }
+      }
+  }  
     
+
+
+
+
+
+
+
+
+  #derrier{
+      margin-top: 250px;
+      margin-bottom: 250px;
+
+      .title{
+          font-size: 47px;
+          font-family: $primary-font;
+          color: $primary-color;
+          letter-spacing: 2.5px;
+          font-weight: bold;
+      }
+      .downtitle{
+         font-size: 30px;
+         font-weight: normal;
+         color: #b6b6b6;
+         margin-bottom: 150px;
+         font-family: $primary-font;
+         margin-top: -10px;
+      }
+      .content-derrier{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        gap: 8em;
+        .last-image{
+            width: 100%;
+            max-width: 800px;
+        }
+         .text-derrier{
+             .text{
+                 font-family: $primary-font;
+                 font-weight: 500;
+                 color: #313131;
+                 letter-spacing: 1px;
+                 max-width: 659px;
+                 font-size: 20px;
+                 text-align: justify;
+                 line-height: 31px;
+                width: 90%;
+                margin: auto;
+             }
+         }
+      }
+  }
+
+
+
 
 }

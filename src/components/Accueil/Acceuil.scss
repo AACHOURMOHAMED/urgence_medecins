@@ -38,7 +38,9 @@ $primary-font:'Lexend';
         top: 0;
         margin-top: 170px;
         .title{
-            font-size: 65px;
+            --max-size: 50;
+            --min-size: 30;
+            font-size: var(--responsive);
             font-weight: bolder;
             letter-spacing: 3px;
             font-family: $primary-font;
@@ -46,7 +48,9 @@ $primary-font:'Lexend';
             color: white;
         }
         .text{
-            font-size: 40px;
+            --max-size: 30;
+            --min-size: 20;
+            font-size: var(--responsive);
             font-family: $primary-font;
             letter-spacing: 2px;
             font-weight: normal;
@@ -65,9 +69,21 @@ $primary-font:'Lexend';
        .content-card{
         margin-top: -40em;
         margin-bottom: 2em;
+        gap: 15px;
+        .card{
+            border-radius: 10px;
+          
+            margin: auto;
         }
-        }  
+        }
+    }  
+
+    #sos-medecins{
+        .image1{
+            margin-top: 300px;
+        }
     }
+}
    
 
 .content-card{
@@ -76,6 +92,7 @@ $primary-font:'Lexend';
     margin-top: -29em;
     margin-bottom: -1em;
     position: absolute;
+    
     .card{
         border: 1px solid rgba(220, 220, 220, 0.212);
         padding: 25px;
@@ -238,10 +255,12 @@ $primary-font:'Lexend';
     }
     .container{
         .content-praticien{
-            padding-top: 80px;
+            padding-top: 50px;
 
             .title{
-                font-size: 55px;
+                --max-size: 40;
+                --min-size: 25;
+                font-size: var(--responsive);
                 font-family: $primary-font;
                 color: white;
                 margin-bottom: 20px;
@@ -250,7 +269,9 @@ $primary-font:'Lexend';
 
             }
             .titre{
-                font-size: 26px;
+                --max-size: 20;
+                --min-size: 16;
+                font-size: var(--responsive);
                 font-family: $primary-font;
                 color: $primary-color;
                 margin-bottom: 70px;  

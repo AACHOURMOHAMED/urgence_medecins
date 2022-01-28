@@ -7,6 +7,7 @@ import 'normalize.css';
 import Acceuil from "./components/Accueil/Acceuil";
 import Footer from "./components/Footer/Footer";
 import { Sommesnous } from "./components/Que-sommes-nous/sommesnous";
+import { Pharmacies } from "./components/Pharmacies-de-garde/Pharmacies";
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route  path='/Sommenous'>
         <Sommesnous/>
+      </Route>
+      <Route  path='/Pharmacies'>
+        <Pharmacies/>
       </Route>
      </Switch>
       

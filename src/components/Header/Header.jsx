@@ -18,7 +18,7 @@ const Header = () => {
         <Link className='item' to='/Acceuil'>Accueil</Link> 
         <Link className='item' to='/Sommenous'>Qui sommes-nous ?</Link>  
         <Link className='item' to='/Nosservices'>Nos services</Link>  
-        <Link className='item' to='/'>Pharmacies de garde</Link>  
+        <Link className='item' to='/Pharmacies'>Pharmacies de garde</Link>  
         <Link className='item' to='/'>Recrutement</Link>  
         <Link className='item' to='/'>Contact</Link>  
   
@@ -32,7 +32,7 @@ const Header = () => {
       > <div className="bar"></div></div>
               
 
-    
+
   </div>
   );
 };
