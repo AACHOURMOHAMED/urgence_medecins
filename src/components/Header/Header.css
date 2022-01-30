@@ -5,6 +5,17 @@
   /* Ranges from 421px to 1199px */
 }
 
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 888;
+}
+
+.active {
+  background-color: #0f537ebb;
+}
+
 .Navbar {
   z-index: 99999;
   height: 60px;

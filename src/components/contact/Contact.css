@@ -1,0 +1,272 @@
+* {
+  /* Calculation */
+  --diff: calc(var(--max-size) - var(--min-size));
+  --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420)));
+  /* Ranges from 421px to 1199px */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c9e4f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0F547E;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0F547E;
+}
+
+#main-Contact {
+  margin-top: -150px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+#main-Contact .back {
+  overflow: hidden;
+  width: 100%;
+  z-index: -111;
+  position: relative;
+  height: 738px;
+}
+
+#main-Contact .black {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.075);
+  position: absolute;
+  z-index: -110;
+  max-height: 738px;
+}
+
+#main-Contact .content {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  margin-top: 240px;
+}
+
+#main-Contact .content .title {
+  font-size: 48px;
+  font-weight: bolder;
+  max-width: 905px;
+  font-family: "Lexend";
+  margin-bottom: 30px;
+  color: white;
+}
+
+#main-Contact .content .text {
+  font-size: 26px;
+  font-family: "Lexend";
+  font-weight: normal;
+  color: white;
+  max-width: 1200px;
+}
+
+#main-Contact .call {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#main-Contact .call .sidetext {
+  font-size: 35px;
+  font-weight: 600;
+  margin-right: 50px;
+  padding-bottom: 40px;
+  font-family: "Lexend";
+  color: white;
+}
+
+#main-Contact .call .btn {
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+#main-Contact .call .btn .icon {
+  margin-right: 10px;
+}
+
+#main-Contact .contact {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background-color: #e2e2e246;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+#main-Contact .contact .text-f {
+  width: 48%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 40px;
+  padding-left: 10px;
+  font-family: "Lexend";
+  outline-style: none;
+  border: none;
+}
+
+#main-Contact .contact input::-webkit-input-placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact input:-ms-input-placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact input::-ms-input-placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact input::placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact input[type=text]:focus {
+  border: 2px solid #1994e0;
+}
+
+#main-Contact .contact .text-f:first-child {
+  width: 97.7%;
+}
+
+#main-Contact .contact .text-f:nth-child(8) {
+  width: 97.7%;
+}
+
+#main-Contact .contact .text-f:nth-child(9) {
+  width: 97.7%;
+}
+
+#main-Contact .contact .check {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+#main-Contact .contact .text-check {
+  font-family: "Lexend";
+  font-size: 18px;
+}
+
+#main-Contact .contact .check[type=checkbox]:checked + label {
+  color: #0F547E;
+  font-weight: bolder;
+}
+
+#main-Contact .contact textarea {
+  font-family: "Lexend";
+  width: 97.7%;
+  height: 150px;
+  font-size: 18px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: 0;
+}
+
+#main-Contact .contact textarea::-webkit-input-placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact textarea:-ms-input-placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact textarea::-ms-input-placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact textarea::placeholder {
+  font-family: "Lexend";
+  color: #0F547E;
+  opacity: .6;
+}
+
+#main-Contact .contact textarea:focus {
+  border: 2px solid #0F547E;
+}
+
+#main-Contact .contact .btn {
+  padding: 10px;
+  width: 300px;
+  background-color: #DF1416;
+  color: white;
+  font-size: 23px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1204px) {
+  #main-Contact .content {
+    padding: 10px;
+  }
+  #main-Contact .content .title {
+    font-size: 35px;
+  }
+  #main-Contact .content .text {
+    font-size: 20px;
+    max-width: 905px;
+  }
+  #main-Contact .contact {
+    width: 100% !important;
+  }
+  #main-Contact .contact .text-f {
+    width: 100% !important;
+  }
+  #main-Contact .contact .text-check {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #main-Contact .content {
+    padding: 10px;
+  }
+  #main-Contact .content .title {
+    font-size: 25px;
+  }
+  #main-Contact .content .text {
+    font-size: 20px;
+    max-width: 905px;
+  }
+  #main-Contact .contact {
+    width: 100% !important;
+  }
+  #main-Contact .contact .text-f {
+    width: 100% !important;
+  }
+  #main-Contact .contact .text-check {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

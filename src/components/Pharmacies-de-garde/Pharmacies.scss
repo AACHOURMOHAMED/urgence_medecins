@@ -58,7 +58,7 @@ $primary-font:'Lexend';
         .title{
            font-size: 48px;
             font-weight: bolder;
-            width: 905px;
+            max-width: 905px;
             font-family: $primary-font;
             margin-bottom: 30px;
             color: white;
@@ -68,7 +68,7 @@ $primary-font:'Lexend';
             font-family: $primary-font;
             font-weight: normal;
             color: white;
-            width: 1200px;
+            max-width: 1200px;
         }
     }
 

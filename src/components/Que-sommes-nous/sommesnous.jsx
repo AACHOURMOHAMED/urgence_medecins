@@ -2,11 +2,17 @@ import React from 'react';
 import back from '../images/back2.png';
 import './sommesnous.css'
 import {FaHeartbeat} from 'react-icons/fa'
-import {ImArrowRight2} from 'react-icons/im'
+import {AiOutlinePlusCircle} from 'react-icons/ai'
 import {FaPhoneAlt} from 'react-icons/fa'
 import image1 from '../images/image1.png'
 import { Button } from '../buttons/Button';
-import medecin from '../images/medecin.png'
+import medecin from '../images/medecin.png';
+import icon1 from '../images/icon3.png';
+import icon2 from '../images/icon2.png';
+import icon3 from '../images/icon1.png';
+import icon4 from '../images/icon4.png';
+
+
 import 'normalize.css';
 
 
@@ -31,10 +37,40 @@ export const Sommesnous = () => {
                     
                 </div>
                 <div className="content-card-nous">
-                  <div className="cardd">hi</div>
-                  <div className="cardd">hi</div>
-                  <div className="cardd">hi</div>
-                  <div className="cardd">hi</div>        
+                  <div className="cardd">
+                    
+                        <img src={icon1} alt="medecins" />
+                        <h1 className="titre">
+                        Découvrir SOS Médecins 
+                        Kenitra
+                        </h1>
+                        <AiOutlinePlusCircle className='icon'/>
+                  </div>
+                  <div className="cardd">
+                  <img src={icon2} alt="chart" />
+                  <h1 className="titre">
+                    La charte SOS Médecins
+                  </h1>
+                  <AiOutlinePlusCircle className='icon'/>
+
+                  </div>
+                  <div className="cardd">
+                  <img src={icon3} alt="kenitra" />
+                  <h1 className="titre">
+                    SOS Médecins Kenitra
+                    Mode d’emploi
+                  </h1>
+                  <AiOutlinePlusCircle className='icon'/>
+
+                  </div>
+                  <div className="cardd">
+                  <img src={icon4} alt="medecins" />
+                  <h1 className="titre">
+                    Qui sont nos médecins ?
+                  </h1>
+                  <AiOutlinePlusCircle className='icon'/>
+
+                  </div>        
 
                 </div>
                 <div className="call"><label className="sidetext">appelez-nous!</label>
@@ -57,18 +93,17 @@ export const Sommesnous = () => {
 
 
                 <div className="notre">
-                  <h1 className="title">nos valeurs</h1>
+                  <h1 className="title">NOTRE MISSION</h1>
                   <p className="text">
-                  Quotidiennement les équipes de SOS MEDECINS RABAT s’engagent à fournir un service de qualité afin de vous satisfaire.
-                  </p>
+                  Vous simplifier la vie et vous faire gagner du temps tout en vous offrant un service performant de qualité et ciblé à votre demande.                  </p>
                 </div>
 
 
 
                 <div className="notre">
-                  <h1 className="title">nos valeurs</h1>
+                  <h1 className="title">NOTRE VISION</h1>
                   <p className="text">
-                  Quotidiennement les équipes de SOS MEDECINS RABAT s’engagent à fournir un service de qualité afin de vous satisfaire.
+                  L’amélioration continue de notre plateforme et de notre base de données afin de vous fournir le meilleur de l’information médicinale.
                   </p>
                 </div>
 
@@ -84,6 +119,7 @@ export const Sommesnous = () => {
                 <div className="content-pointskenitra">
                   <img src={image1} className='image1' alt="" />
                   <div className="container">
+                    <div className="content5">
                     <h1 className="title">LES 5 POINTS DE LA CHARTE SOS 
                     MÉDECINS Kenitra</h1>
                     <div className="content-points">
@@ -137,6 +173,7 @@ export const Sommesnous = () => {
                       </div>
                       {/* card section */}
 
+                    </div>
                     </div>
                   </div>
                 </div>

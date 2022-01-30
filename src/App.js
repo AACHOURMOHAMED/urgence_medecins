@@ -8,13 +8,22 @@ import Acceuil from "./components/Accueil/Acceuil";
 import Footer from "./components/Footer/Footer";
 import { Sommesnous } from "./components/Que-sommes-nous/sommesnous";
 import { Pharmacies } from "./components/Pharmacies-de-garde/Pharmacies";
+import  {Contact} from "./components/contact/Contact";
+import { Recrutement } from "./components/Recrutement/Recrutement";
+
+
 
 
 function App() {
+
+
+  
+
   return (
     <Router>
 
      <Header/>
+     <hr></hr>
      <Switch>
      
 
@@ -29,6 +38,12 @@ function App() {
       </Route>
       <Route  path='/Pharmacies'>
         <Pharmacies/>
+      </Route>
+      <Route  path='/Contact'>
+        <Contact/>
+      </Route>
+      <Route  path='/Recrutement'>
+        <Recrutement/>
       </Route>
      </Switch>
       

@@ -162,7 +162,7 @@
 
 #sos-medecins .content-sos {
   padding-top: 10em;
-  max-width: 861px;
+  max-width: 961px;
 }
 
 #sos-medecins .content-sos .title {
@@ -180,7 +180,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Lexend";
   gap: 3rem;
   text-align: justify;
@@ -195,7 +195,7 @@
 
 #sos-medecins .content-sos .content-small .contentt {
   color: #313131;
-  width: 376px;
+  width: 420px;
 }
 
 #sos-medecins .content-sos .content-small .contentt:nth-child(3) {
@@ -289,23 +289,26 @@
 }
 
 #showcase-praticien .container .content-praticien .text-content {
-  width: 664px;
-  height: 390px;
+  max-width: 664px;
+  height: 400px;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   background-color: rgba(255, 255, 255, 0.281);
   border-radius: 20px;
   line-height: 35px;
+  padding: 20px;
 }
 
 #showcase-praticien .container .content-praticien .text-content .text {
-  width: 520px;
-  font-size: 18px;
+  max-width: 520px;
+  --max-size: 17;
+  --min-size: 16;
+  font-size: var(--responsive);
   font-family: "Lexend";
   text-align: justify;
   color: #313131;
   margin: auto;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 #showcase-praticien .container .content-praticien .text-content .button-text {

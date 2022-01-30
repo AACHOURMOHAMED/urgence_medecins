@@ -57,20 +57,24 @@
 }
 
 #main-nous .content .title {
-  font-size: 48px;
+  --max-size:35;
+  --min-size: 25;
+  font-size: var(--responsive);
   font-weight: bolder;
-  width: 905px;
+  max-width: 905px;
   font-family: "Lexend";
   margin-bottom: 30px;
   color: white;
 }
 
 #main-nous .content .text {
-  font-size: 26px;
+  --max-size: 21;
+  --min-size: 16;
+  font-size: var(--responsive);
   font-family: "Lexend";
   font-weight: normal;
   color: white;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 #main-nous .content-card-nous {
@@ -87,6 +91,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Lexend";
   gap: 2em;
 }
 
@@ -100,6 +105,28 @@
   border-radius: 10px;
   -webkit-box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
           box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#main-nous .content-card-nous .cardd .titre {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#main-nous .content-card-nous .cardd .icon {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: -13px;
+  font-size: 30px;
+  color: #DF1416;
+  text-align: center;
+  cursor: pointer;
+}
+
+#main-nous .content-card-nous .cardd .icon:hover {
+  color: #0F547E;
 }
 
 #main-nous .call {
@@ -206,16 +233,24 @@
   display: flex;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #main-nous #showcase-points .content-pointskenitra .image1 {
-  float: left;
   margin-bottom: 50px;
+}
+
+#main-nous #showcase-points .content-pointskenitra .content5 {
+  position: absolute;
 }
 
 #main-nous #showcase-points .content-pointskenitra .title {
   color: #0F547E;
-  font-size: 41px;
+  --max-size: 31;
+  --min-size: 16;
+  font-size: var(--responsive);
   letter-spacing: 3px;
   font-family: "Lexend";
   font-weight: bold;
@@ -231,7 +266,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 3em;
-  max-width: 1000px;
+  width: 1200px;
 }
 
 #main-nous #showcase-points .content-pointskenitra .content-points .card-point {
@@ -292,8 +327,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -301,7 +334,7 @@
 }
 
 #main-nous #derrier .content-derrier .last-image {
-  width: 100%;
+  max-width: 100%;
   max-width: 800px;
 }
 
@@ -316,5 +349,94 @@
   line-height: 31px;
   width: 90%;
   margin: auto;
+}
+
+@media (max-width: 1852px) {
+  #showcase-points .content-pointskenitra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  #showcase-points .content-pointskenitra .image1 {
+    width: 406px;
+    height: 645px;
+  }
+  #showcase-points .content-pointskenitra .content5 {
+    margin-left: 340px;
+  }
+  #showcase-points .content-pointskenitra .content-points {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 3em;
+    max-width: 600px !important;
+  }
+  #showcase-points .content-pointskenitra .content-points .card-point {
+    margin-left: 50px;
+    position: relative;
+    max-width: 220px;
+    max-height: 157px;
+    border-radius: 10px;
+  }
+  #showcase-points .content-pointskenitra .content-points .card-point .number {
+    font-size: 94px !important;
+  }
+  #showcase-points .content-pointskenitra .content-points .card-point .text {
+    font-size: 12px !important;
+    margin-top: -78px;
+  }
+}
+
+@media (max-width: 1852px) and (max-width: 1012px) {
+  #showcase-points .content-pointskenitra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  #showcase-points .content-pointskenitra .image1 {
+    width: 406px;
+    height: 505px;
+    margin: auto;
+  }
+  #showcase-points .content-pointskenitra .content5 {
+    margin-left: 0px;
+    position: static !important;
+    margin-bottom: 50px;
+  }
+  #showcase-points .content-pointskenitra .content-points {
+    margin-top: 50px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    gap: 3em;
+    max-width: 400px !important;
+    margin: auto;
+  }
+  #showcase-points .content-pointskenitra .content-points .card-point {
+    margin-left: 50px;
+    position: relative;
+    max-width: 220px;
+    max-height: 157px;
+    border-radius: 10px;
+  }
+  #showcase-points .content-pointskenitra .content-points .card-point .number {
+    font-size: 94px !important;
+  }
+  #showcase-points .content-pointskenitra .content-points .card-point .text {
+    font-size: 12px !important;
+    margin-top: -78px;
+  }
 }
 /*# sourceMappingURL=sommesnous.css.map */

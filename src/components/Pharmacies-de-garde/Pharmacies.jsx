@@ -6,7 +6,9 @@ import {ImArrowRight2} from 'react-icons/im'
 import {FaPhoneAlt} from 'react-icons/fa'
 import image1 from '../images/image1.png'
 import { Button } from '../buttons/Button';
-import medecin from '../images/medecin.png'
+import medecin from '../images/medecin.png';
+import { Link } from 'react-router-dom';
+import Map from '../Map/Map'
 import 'normalize.css';
 export const Pharmacies = () => {
   return (
@@ -30,13 +32,15 @@ export const Pharmacies = () => {
                    
 
                     <div className="call"><label className="sidetext">appelez-nous!</label>
-                    <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+                     <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+
                     </div>
                 </div>
                 
               
             </div>
    
+          <Map/>
           
     </section> 
 </div>

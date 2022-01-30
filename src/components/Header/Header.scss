@@ -6,6 +6,15 @@ $primary-font:'Lexend';
   --diff: calc(var(--max-size) - var(--min-size));
   --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
 }
+#header{
+  position: sticky;
+  top: 0;
+  z-index: 888;
+}
+.active{
+  background-color: #0f537ebb;
+
+}
 .Navbar {
     z-index: 99999;
     height: 60px;
@@ -15,7 +24,7 @@ $primary-font:'Lexend';
     margin-top: 10px;
     .btn{
         margin: 20px;
-      z-index: 1111;
+        z-index: 1111;
         
         
         .icon{

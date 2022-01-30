@@ -1,0 +1,309 @@
+$primary-color:#0F547E;
+$sec-color:#DF1416;
+$primary-font:'Lexend';
+* {
+    /* Calculation */
+    --diff: calc(var(--max-size) - var(--min-size));
+    --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c9e4f5; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary-color; 
+  }
+//main section
+  #main-Recrutement{
+    margin-top: -150px;
+    overflow: hidden;        
+    position: relative;
+    height: 100%;
+
+    .back{
+        overflow: hidden;
+        width: 100%;
+        z-index: -111;
+        position: relative;
+        height: 738px;
+    }
+   
+    .black{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.075);
+        position: absolute;
+        z-index: -110;
+        max-height: 738px;
+
+    }
+    .content{
+        position: absolute;
+        z-index: 11;
+        top: 0;
+        margin-top: 240px;
+        .title{
+            --max-size: 30;
+            --min-size: 25;
+            font-size: var(--responsive);
+            font-weight: bolder;
+            max-width: 905px;
+            font-family: $primary-font;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .text{
+            --max-size: 30;
+            --min-size: 20;
+            font-size: var(--responsive);
+            font-family: $primary-font;
+            font-weight: normal;
+            color: white;
+            max-width: 1200px;
+        }
+    }
+
+    .call{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .sidetext{
+            font-size: 35px;
+            font-weight: 600;
+            margin-right: 50px;
+            padding-bottom: 40px;
+            font-family: $primary-font;
+            color: white;
+        }
+
+        .btn{
+            font-size: 24px;
+            font-weight: 600;
+            align-items: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            .icon{
+                margin-right: 10px;
+            }
+        }
+    }
+    
+
+
+    .contact-m{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: $primary-font;
+        margin: 50px auto;
+        .medecin{
+            background-color: #e2e2e246;            
+            padding: 30px;
+            width: 600px;
+            max-width: 600px;
+            .title{
+                color: black;
+                --max-size: 40;
+                --min-size: 30;
+                font-size: var(--responsive);
+                text-align: center;
+            }
+
+
+
+            .field-wrapper{
+                input[type=text]{
+                    width: 100%;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                height: 40px;
+                padding-left: 10px;
+                font-family: $primary-font;
+                outline-style: none;
+                border: none; 
+                }
+                
+                input[type=file]{
+                    width: 100%;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    
+                }
+                
+                label {
+                   
+                    font: 1rem;
+                }
+               
+            }
+
+
+            .check{
+                margin-right:10px ;
+                margin-bottom: 15px;
+                }            
+            .text-check{
+                font-family: $primary-font;
+                font-size: 18px;
+                
+            }
+
+            .check[type=checkbox]{
+                width: 55px;
+            }
+
+            .check[type=checkbox]:checked + label {
+                color: $primary-color;
+                
+                font-weight: bolder;
+            } 
+
+            input::placeholder{
+                font-family: $primary-font;
+                color: $primary-color;
+                opacity: .6;
+            }
+            input[type=text]:focus{
+                border: 2px solid #1994e0;
+                
+            }
+
+            textarea{
+                font-family: $primary-font;
+                width:100%;
+                height: 150px;
+                font-size: 18px;
+                padding-top: 10px;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                padding-left: 10px;
+                outline: none;
+                border: 0;
+            }
+    
+            textarea::placeholder{
+                font-family: $primary-font;
+                color: $primary-color;
+                opacity: .6;
+            }
+            textarea:focus{
+                border: 2px solid #0F547E;
+            } 
+
+
+            .btn{
+                padding: 10px;
+                width: 300px;
+                background-color: $sec-color;
+                color: white;
+                font-size: 23px;
+                letter-spacing: 1px;
+                border: none;
+                border-radius: 5px;
+                border: 2px solid $sec-color;
+    
+            }
+
+            .btn:hover{
+                color: $primary-color;
+                background-color: transparent;
+                border: 2px solid $sec-color;
+
+            }
+        }
+
+
+
+
+
+
+        .content-appel{
+            background-color: #d7ecff46;            
+            padding: 30px;
+            width: 600px;
+            max-width: 600px;
+            .title{
+                color: black;
+                --max-size: 30;
+                --min-size: 20;
+                font-size: var(--responsive);
+                text-align: center;
+            }
+        }
+    }
+
+
+
+
+  }
+
+
+  // end of main section
+
+
+#conditions{
+    text-align: center;
+    font-family: $primary-font;
+    margin-top: 150px;
+    .content{
+        .title{
+            color: $primary-color;
+            --max-size: 30;
+            --min-size: 20;
+            font-size: var(--responsive);
+        }
+        .titre{
+            color: rgb(168, 168, 168);
+            --max-size: 25;
+            --min-size: 20;
+            font-size: var(--responsive); 
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        .text{
+            color: #313131;
+            --max-size: 20;
+            --min-size: 16;
+            font-size: var(--responsive);
+           font-weight: 300;
+        }
+
+        .card-conditions{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            gap: 2em;
+
+            h1{
+                margin: auto;
+            }
+            .card-cond{
+                max-width: 470px;
+                min-width: 340px;
+                padding: 20px;
+                border-radius: 5px;
+                background-color: $primary-color;
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}

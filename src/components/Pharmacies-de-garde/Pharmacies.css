@@ -59,7 +59,7 @@
 #main-Pharmacies .content .title {
   font-size: 48px;
   font-weight: bolder;
-  width: 905px;
+  max-width: 905px;
   font-family: "Lexend";
   margin-bottom: 30px;
   color: white;
@@ -70,7 +70,7 @@
   font-family: "Lexend";
   font-weight: normal;
   color: white;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 #main-Pharmacies .call {
