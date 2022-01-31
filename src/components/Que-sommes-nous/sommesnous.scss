@@ -32,9 +32,11 @@ $primary-font:'Lexend';
     position: relative;
     height: 100%;
 
+
     .back{
         overflow: hidden;
         width: 100%;
+        min-width: 1800px;
         z-index: -111;
         position: relative;
         height: 738px;
@@ -145,7 +147,7 @@ $primary-font:'Lexend';
     }
     .colorgrad{
         background: rgb(209,237,255);
-        background: linear-gradient(-180deg, rgba(209,237,255,1) 0%, rgba(251,251,251,1) 100%);
+        background: linear-gradient(-180deg, rgba(209,237,255,1) 0%, rgb(255, 255, 255) 100%);
         width: 100%;
         height: 1000px;
         z-index: -11141;
@@ -206,12 +208,14 @@ $primary-font:'Lexend';
 
 
   #showcase-points{
+
       .content-pointskenitra{
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: space-between;
+
         .image1{
-            margin-bottom: 50px;
+            padding-bottom: 50px;
             
         }
         .content5{
@@ -281,37 +285,48 @@ $primary-font:'Lexend';
       margin-bottom: 250px;
 
       .title{
-          font-size: 47px;
+          
+        --max-size: 40;
+        --min-size: 30;
+        font-size: var(--responsive);
           font-family: $primary-font;
           color: $primary-color;
           letter-spacing: 2.5px;
           font-weight: bold;
       }
       .downtitle{
-         font-size: 30px;
+         
+        --max-size: 30;
+        --min-size: 25;
+        font-size: var(--responsive);
          font-weight: normal;
          color: #b6b6b6;
-         margin-bottom: 150px;
+         margin-bottom: 70px;
          font-family: $primary-font;
          margin-top: -10px;
       }
       .content-derrier{
         display: flex;
- 
+        flex-wrap: wrap-reverse;
         align-items: center;
-        gap: 8em;
+        gap: 5em;
         .last-image{
-            max-width: 100%;
+            width: 100%;
             max-width: 800px;
+            margin: auto;
         }
          .text-derrier{
+             margin: auto;
              .text{
                  font-family: $primary-font;
                  font-weight: 500;
                  color: #313131;
                  letter-spacing: 1px;
                  max-width: 659px;
-                 font-size: 20px;
+                 
+                --max-size: 20;
+                --min-size: 18;
+                font-size: var(--responsive);
                  text-align: justify;
                  line-height: 31px;
                  width: 90%;

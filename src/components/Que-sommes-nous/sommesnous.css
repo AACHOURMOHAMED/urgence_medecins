@@ -34,6 +34,7 @@
 #main-nous .back {
   overflow: hidden;
   width: 100%;
+  min-width: 1800px;
   z-index: -111;
   position: relative;
   height: 738px;
@@ -159,8 +160,8 @@
 
 #main-nous .colorgrad {
   background: #d1edff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d1edff), to(#fbfbfb));
-  background: linear-gradient(-180deg, #d1edff 0%, #fbfbfb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#d1edff), to(white));
+  background: linear-gradient(-180deg, #d1edff 0%, white 100%);
   width: 100%;
   height: 1000px;
   z-index: -11141;
@@ -239,7 +240,7 @@
 }
 
 #main-nous #showcase-points .content-pointskenitra .image1 {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 #main-nous #showcase-points .content-pointskenitra .content5 {
@@ -307,7 +308,9 @@
 }
 
 #main-nous #derrier .title {
-  font-size: 47px;
+  --max-size: 40;
+  --min-size: 30;
+  font-size: var(--responsive);
   font-family: "Lexend";
   color: #0F547E;
   letter-spacing: 2.5px;
@@ -315,10 +318,12 @@
 }
 
 #main-nous #derrier .downtitle {
-  font-size: 30px;
+  --max-size: 30;
+  --min-size: 25;
+  font-size: var(--responsive);
   font-weight: normal;
   color: #b6b6b6;
-  margin-bottom: 150px;
+  margin-bottom: 70px;
   font-family: "Lexend";
   margin-top: -10px;
 }
@@ -327,15 +332,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8em;
+  gap: 5em;
 }
 
 #main-nous #derrier .content-derrier .last-image {
-  max-width: 100%;
+  width: 100%;
   max-width: 800px;
+  margin: auto;
+}
+
+#main-nous #derrier .content-derrier .text-derrier {
+  margin: auto;
 }
 
 #main-nous #derrier .content-derrier .text-derrier .text {
@@ -344,7 +356,9 @@
   color: #313131;
   letter-spacing: 1px;
   max-width: 659px;
-  font-size: 20px;
+  --max-size: 20;
+  --min-size: 18;
+  font-size: var(--responsive);
   text-align: justify;
   line-height: 31px;
   width: 90%;

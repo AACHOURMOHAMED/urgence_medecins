@@ -111,7 +111,7 @@
 }
 
 .content-card .card .buttom-content .btn-circle {
-  margin-left: 250px;
+  margin-left: 210px;
   padding: 10px;
   border-radius: 100%;
   border: none;
@@ -144,8 +144,8 @@
 
 #sos-medecins .colorgrad {
   background: #d1edff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d1edff), to(#fbfbfb));
-  background: linear-gradient(-180deg, #d1edff 0%, #fbfbfb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#d1edff), to(white));
+  background: linear-gradient(-180deg, #d1edff 0%, white 100%);
   position: absolute;
   width: 100%;
   height: 100%;

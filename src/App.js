@@ -10,6 +10,7 @@ import { Sommesnous } from "./components/Que-sommes-nous/sommesnous";
 import { Pharmacies } from "./components/Pharmacies-de-garde/Pharmacies";
 import  {Contact} from "./components/contact/Contact";
 import { Recrutement } from "./components/Recrutement/Recrutement";
+import Navbar from "./components/Navbar/Navbar";
 
 
 
@@ -21,16 +22,16 @@ function App() {
 
   return (
     <Router>
-
      <Header/>
      <hr></hr>
+     <Redirect path="/Acceuil"/>
      <Switch>
      
 
       <Route exact path='/' component={Acceuil}>
         <Acceuil/>
       </Route>
-      <Route exact path='/acceuil'>
+      <Route exact path='/Acceuil'>
         <Acceuil/>
       </Route>
       <Route  path='/Sommenous'>

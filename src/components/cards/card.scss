@@ -12,15 +12,29 @@ $primary-font:'Lexend';
     
 }
 .card--default{
-    width: 400px;
+    max-width: 400px;
     min-width: 390px;
     max-height: 197px;
     min-height: 197px;
-
     color: white;
     font-weight: 600;
 
 }
+
+
+@media (max-width:800px) {
+    .card--default{
+        max-width: 40px !important;
+        min-width: 350px;
+        max-height: 197px;
+        min-height: 197px;
+        margin-left: -10px !important;
+        color: white;
+        font-weight: 600;
+    
+    }
+}
+ 
 
 .card--large{
     width: 730px;

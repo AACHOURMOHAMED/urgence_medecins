@@ -37,6 +37,7 @@
   z-index: -111;
   position: relative;
   height: 738px;
+  min-width: 1800px;
 }
 
 #main-Contact .black {

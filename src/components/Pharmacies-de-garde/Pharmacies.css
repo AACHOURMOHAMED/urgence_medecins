@@ -37,6 +37,7 @@
   z-index: -111;
   position: relative;
   height: 738px;
+  min-width: 1800px;
 }
 
 #main-Pharmacies .black {
@@ -57,7 +58,9 @@
 }
 
 #main-Pharmacies .content .title {
-  font-size: 48px;
+  --max-size: 40;
+  --min-size: 25;
+  font-size: var(--responsive);
   font-weight: bolder;
   max-width: 905px;
   font-family: "Lexend";
@@ -66,7 +69,9 @@
 }
 
 #main-Pharmacies .content .text {
-  font-size: 26px;
+  --max-size: 30;
+  --min-size: 20;
+  font-size: var(--responsive);
   font-family: "Lexend";
   font-weight: normal;
   color: white;

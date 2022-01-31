@@ -38,6 +38,7 @@ $primary-font:'Lexend';
         z-index: -111;
         position: relative;
         height: 738px;
+        min-width: 1800px;
     }
    
     .black{
@@ -56,15 +57,21 @@ $primary-font:'Lexend';
         top: 0;
         margin-top: 240px;
         .title{
-           font-size: 48px;
-            font-weight: bolder;
+
+          --max-size: 40;
+          --min-size: 25;
+          font-size: var(--responsive);            
+          font-weight: bolder;
             max-width: 905px;
             font-family: $primary-font;
             margin-bottom: 30px;
             color: white;
         }
         .text{
-            font-size: 26px;
+           
+          --max-size: 30;
+          --min-size: 20;
+          font-size: var(--responsive);
             font-family: $primary-font;
             font-weight: normal;
             color: white;

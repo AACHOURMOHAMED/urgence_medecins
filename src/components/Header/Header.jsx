@@ -4,6 +4,7 @@ import logo from '../images/logo-white.png'
 import { Button } from '../buttons/Button';
 import "./Header.css";
 import 'normalize.css';
+import Navbar from '../Navbar/Navbar'
 
 import { FaPhoneAlt } from 'react-icons/fa';
 
@@ -47,21 +48,22 @@ const Header = () => {
         
         <Link className='item' to='/Acceuil'>Accueil</Link> 
         <Link className='item' to='/Sommenous'>Qui sommes-nous ?</Link>  
-        <Link className='item' to='/Acceuil'>Nos services</Link>  
+        <Link className='item' to='/'>Nos services</Link>  
         <Link className='item' to='/Pharmacies'>Pharmacies de garde</Link>  
         <Link className='item' to='/Recrutement'>Recrutement</Link>  
         <Link className='item' to='/Contact'>Contact</Link>  
   
       </div>
-      <div className="btn">
+      <div className="navbar">
+        <div className="btn">
       
               <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> <a href="tel:0537777333"> 47 07 77 77 </a></Button>
-             
+              
       </div>
-      <div
-        className={`nav-toggle ${isOpen && "open"}`}
-        onClick={() => setIsOpen(!isOpen)}
-      > <div className="bar"></div></div>
+       <Navbar/>
+      </div>
+      
+
               
 
 
