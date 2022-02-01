@@ -12,7 +12,6 @@ $primary-font:'Lexend';
     overflow: hidden;        
     position: relative;
     height: 100%;
-
     .back{
         overflow: hidden;
         width: 111.5%;
@@ -37,6 +36,7 @@ $primary-font:'Lexend';
         z-index: 11;
         top: 0;
         margin-top: 170px;
+        
         .title{
             --max-size: 50;
             --min-size: 30;
@@ -153,11 +153,10 @@ $primary-font:'Lexend';
     right: 0;
     z-index: -11;
   
-
    }
     .content-sos{
         padding-top: 10em;
-        max-width: 961px;
+        max-width: 861px;
         .title{        
 
             --max-size: 40;
@@ -173,7 +172,7 @@ $primary-font:'Lexend';
         .content-small{
             display: flex;
             flex-wrap: wrap;
-            font-size: 16px;
+            font-size: 14px;
             font-family: $primary-font;
             gap: 3rem;
             text-align: justify;
@@ -185,7 +184,7 @@ $primary-font:'Lexend';
             border-radius: 30px;
             .contentt{
                 color:#313131;
-                width: 420px;
+                width: 375px;
             }
             .contentt:nth-child(3){
                 width: 800px;

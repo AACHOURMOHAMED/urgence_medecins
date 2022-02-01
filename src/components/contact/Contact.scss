@@ -105,6 +105,27 @@ $primary-font:'Lexend';
         padding: 50px;
         border-radius: 10px;
         
+
+        .title{
+            --max-size: 40;
+            --min-size: 30;
+            font-size: var(--responsive);
+            font-weight: bolder;
+            letter-spacing: 3px;
+            font-family: $primary-font;
+            margin-bottom: 30px;
+            color: $primary-color;
+            text-align: center;
+        }
+
+        .par{
+            font-size: 16px;
+            color: rgb(255, 125, 125);
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
         
             .text-f{
                 width: 48%;

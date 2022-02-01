@@ -16,7 +16,7 @@ export const ReCAPTCHAForm = (props) => {
       <ReCAPTCHA
         ref={recaptchaRef}
         size="150px"
-        sitekey="6LcTFEgeAAAAAPucfOhA8Y0C8CbRKv9CBlD7lTnU"
+        sitekey="6LcMtE4eAAAAAIM_LG-IU4CZMMpJFlBzO3bge2ue"
       />
     </form>
   )

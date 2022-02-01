@@ -1,7 +1,7 @@
 {
   "name": "urgence_medecins",
   "version": "0.1.0",
-  "homepage": "http://umk.ma/react/",
+  "homepage": "http://umk.ma",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.7.0",

@@ -162,7 +162,7 @@
 
 #sos-medecins .content-sos {
   padding-top: 10em;
-  max-width: 961px;
+  max-width: 861px;
 }
 
 #sos-medecins .content-sos .title {
@@ -180,7 +180,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Lexend";
   gap: 3rem;
   text-align: justify;
@@ -195,7 +195,7 @@
 
 #sos-medecins .content-sos .content-small .contentt {
   color: #313131;
-  width: 420px;
+  width: 375px;
 }
 
 #sos-medecins .content-sos .content-small .contentt:nth-child(3) {

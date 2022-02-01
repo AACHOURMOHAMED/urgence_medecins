@@ -17,12 +17,15 @@ export const Contact = () => {
   
 
 function sendEmail(e){
+  e.preventDefault();
   emailjs.sendForm(
     "service_37yvccr","template_hwn2ato",
     e.target,
-    'user_8AEUtOaJf7kJfSiN1nktg'
+    'user_8AEUtOaJf7kJfSiN1nktg',
+    
   ).then(res=>{
-    console.log(res)
+    console.log(res);
+    alert('hello');
   }).catch(err => console.log(err))
 }
 
@@ -40,35 +43,32 @@ function sendEmail(e){
         
             <div className="container">
                 <div className="content">
-                    <h1 className="title">CONTACT ET NUMÉRO DE TÉLÉPHONE
+                    <h1 className="title">CONTACT ET NUMÉRO DE TÉLÉPHONE</h1>
 
 
-                      </h1>
                     <p className="text">SOS Médecins Grand Kenitra</p>
                    
 
                     <div className="call"><label className="sidetext">appelez-nous!</label>
-                     <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
-
+                     <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/>47 07 77 77</Button>
                     </div>
                 </div>
                 
               
 
-
-
-
-
-
                 {/* /********************************************************************* */ }
 
                 <div className="contact">
+                  <h1 className="title">Contact</h1>
+                  <p className="par">
+                  ATTENTION ! Ce formulaire de contact sert uniquement à la demande de documents administratifs, aucune demande médicale ou autre ne sera prise en compte.
+                  </p>
                     <form autoComplete='off' onSubmit={sendEmail}>
                    
                       {/* Single item */}
                 
                         <input className='text-f'
-                         type="text" 
+                         type="date" 
                          name='date-visite' 
                          placeholder='Date de visite' 
                          
@@ -120,27 +120,7 @@ function sendEmail(e){
                       {/*End of Single item */}
 
 
-                      {/* Single item */}
-            
-                        <input className='text-f' 
-                        type="text" 
-                        name='prenomm' 
-                        placeholder='Prenom du medecin' 
-                    
-                        required/>
-              
-                      {/*End of Single item */}
-
-                      {/* Single item */}
-            
-                        <input className='text-f' 
-                        type="text" 
-                        name='nomm' 
-                        placeholder='Nom du medecin' 
                       
-                        required/>
-        
-                      {/*End of Single item */}
 
                       {/* Single item */}
               

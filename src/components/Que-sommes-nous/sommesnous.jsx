@@ -84,7 +84,7 @@ export const Sommesnous = () => {
               <h1 className='title'>SOS MEDECINS KENITRA</h1>
               <div className="notre-content">
                 <div className="notre">
-                  <h1 className="title">nos valeurs</h1>
+                  <h1 className="title">NOTRE VALEURS</h1>
                   <p className="text">
                   Quotidiennement les équipes de SOS MEDECINS RABAT s’engagent à fournir un service de qualité afin de vous satisfaire.
                   </p>
@@ -194,7 +194,7 @@ export const Sommesnous = () => {
                    <div className="text-derrier">
                     <p className="text">
                         Tous nos médecins généralistes urgentistes abordent leur pratique médicale dans un esprit associatif, en mettant en avant la solidarité et le partage avec les patients, mais aussi envers leurs confrères.
-<br /><br />
+                        <br /><br />
                         Ces médecins urgentistes donnent de leur expérience, de leur compétence et de leur humanisme pour permettre de développer SOS Médecins Grand Paris et ses services. Et surtout, de vous garantir une écoute, un soutien et un accompagnement à chacune de nos interventions médicales d’urgence.
                     </p>
                   </div>

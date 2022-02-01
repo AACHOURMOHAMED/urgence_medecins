@@ -113,15 +113,14 @@ const Acceuil = () => {
             </div>
         </div>
     </section>
-    {/*The end of sos medecins section keitra*/}
+    {/*The end of sos medecins section kenitra*/}
 
-
+    
     {/*vous etes praticien section */}
 
     <section id="showcase-praticien">
         <img src={back} alt="backgound of the page" className="backk" />
         <div className="colorgrad"></div>
-
         <div className="container">
             <div className="content-praticien">
                 <h1 className="title">VOUS ÊTES PRATICIEN ?</h1>

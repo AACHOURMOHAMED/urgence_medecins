@@ -109,6 +109,27 @@
   border-radius: 10px;
 }
 
+#main-Contact .contact .title {
+  --max-size: 40;
+  --min-size: 30;
+  font-size: var(--responsive);
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: "Lexend";
+  margin-bottom: 30px;
+  color: #0F547E;
+  text-align: center;
+}
+
+#main-Contact .contact .par {
+  font-size: 16px;
+  color: #ff7d7d;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 #main-Contact .contact .text-f {
   width: 48%;
   margin-bottom: 20px;
