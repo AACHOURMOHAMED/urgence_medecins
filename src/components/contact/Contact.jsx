@@ -12,10 +12,15 @@ import 'normalize.css';
 import emailjs from 'emailjs-com'
 import axios from 'axios'
 import {ReCAPTCHAForm} from '../Recaptcha/ReCAPTCHAForm'
+import swal from 'sweetalert';
+import { refresh } from 'aos';
 
 export const Contact = () => {
-  
-
+  const [prenom,setPrenom] = useState('')
+  const handlePrenom = (e) =>{
+    setPrenom(e.target.value);
+    console.log(e.target.value);
+    }
 function sendEmail(e){
   e.preventDefault();
   emailjs.sendForm(
@@ -24,8 +29,9 @@ function sendEmail(e){
     'user_8AEUtOaJf7kJfSiN1nktg',
     
   ).then(res=>{
-    console.log(res);
-    alert('hello');
+    swal('Votre message a été envoyé avec succès');
+    document.querySelector("#imageForm").reset();
+    setPrenom('');
   }).catch(err => console.log(err))
 }
 
@@ -46,11 +52,11 @@ function sendEmail(e){
                     <h1 className="title">CONTACT ET NUMÉRO DE TÉLÉPHONE</h1>
 
 
-                    <p className="text">SOS Médecins Grand Kenitra</p>
+                    <p className="text">SOS Médecins  Kenitra</p>
                    
 
                     <div className="call"><label className="sidetext">appelez-nous!</label>
-                     <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/>47 07 77 77</Button>
+                     <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/>0537777333</Button>
                     </div>
                 </div>
                 
@@ -63,15 +69,14 @@ function sendEmail(e){
                   <p className="par">
                   ATTENTION ! Ce formulaire de contact sert uniquement à la demande de documents administratifs, aucune demande médicale ou autre ne sera prise en compte.
                   </p>
-                    <form autoComplete='off' onSubmit={sendEmail}>
+                    <form id='imageForm' autoComplete='off' onSubmit={sendEmail}>
                    
                       {/* Single item */}
                 
                         <input className='text-f'
                          type="date" 
                          name='date-visite' 
-                         placeholder='Date de visite' 
-                         
+                         placeholder='Date de visite'
                          required/>
                       
                       {/*End of Single item */}
@@ -82,7 +87,7 @@ function sendEmail(e){
                         type="text" 
                         name='prenom' 
                         placeholder='Prenom du patient' 
-                       
+                        onChange={handlePrenom}
                         required/>
                      
                       {/*End of Single item */}
@@ -103,7 +108,6 @@ function sendEmail(e){
                         type="text" 
                         name='tel' 
                         placeholder="Téléphone du patient" 
-                        
                         required/>
             
                       {/*End of Single item */}
@@ -114,7 +118,6 @@ function sendEmail(e){
                         type="email" 
                         name='useremail' 
                         placeholder='E-mail du patient' 
-                      
                         required/>
           
                       {/*End of Single item */}
@@ -171,10 +174,10 @@ function sendEmail(e){
 
                         <br />
                         <input className='check check1' type="checkbox" value="Duplicata ou problème de feuille de soins" name='check' required/> 
-                        <label className='text-check' htmlFor="check">Duplicata ou problème de feuille de soins</label>
+                        <label className='text-check'   htmlFor="check">Duplicata ou problème de feuille de soins</label>
                         <br />
                         <input className='check check2'  type="checkbox" value=" Duplicata ou problème d’arrêt de travail" name='check1' />
-                        <label className='text-check' htmlFor="check1">Duplicata ou problème d’arrêt de travail</label>
+                        <label className='text-check'     htmlFor="check1">Duplicata ou problème d’arrêt de travail</label>
                         <br />
                         <input className='check check3'  type="checkbox" value="  Congé enfant malade" name='check2' />
                         <label className='text-check' htmlFor="check1">Congé enfant malade</label>
@@ -204,7 +207,8 @@ function sendEmail(e){
                         <ReCAPTCHAForm />
 
                         <br />
-                      <input className='btn' type="submit" value="Send" />
+                      <input className='btn' type="submit" value="Send"
+                       />
 
                     </form>
             

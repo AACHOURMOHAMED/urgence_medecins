@@ -14,13 +14,13 @@ const Footer = () => {
                <div className="left-content">{/*this the left content of the footer */}
                     <img className='logo' src={logo} alt="logo" />
                     <div className="text">
-                    SOS MEDECINS KENITRA est une structure médicale d’urgence qui assure une permanence de soins 24h/24 et 7j/7 sur Rabat, Salé et Temara Skhirat et ce depuis 2008.<br></br>
-                    SOS MEDECINS KENITRA est un service de garde de médecins généralistes et urgentistes. Nos médecins se déplacent à domicile sur un simple appel téléphonique à notre centrale. <br />
-                    SOS MEDECINS KENITRA fait le lien entre le patient et le système de soins, dans une situation d’urgence ou le patient n’a pas accès à son médecin traitant.
+                    SOS MEDECINS KENITRA est une structure médicale d’urgence qui assure une permanence de soins 24h/24 et 7j/7 sur Kenitra, Salé, sidi yahya el gharb, Sidi Slimane  et Sidi Kacem.<br></br>
+                        SOS MEDECINS KENITRA est un service de garde de médecins généralistes et urgentistes. Nos médecins se déplacent à domicile sur un simple appel téléphonique à notre centrale.<br></br>
+                        SOS MEDECINS KENITRA fait le lien entre le patient et le système de soins, dans une situation d’urgence ou le patient n’a pas accès à son médecin traitant.
                     </div>
                     <div className="button-footer">
                         <label className="call">appelez-nous!</label>
-                        <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+                        <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/> 0537777333</Button>
                     </div>
                 </div>
                 <div className="right-content">{/*this the right content of the footer */}
@@ -33,9 +33,9 @@ const Footer = () => {
                
                     <Link className='link' to='/'>Visite a domicile</Link>
                     <Link className='link' to='/'>Consultations</Link>
-                    <Link className='link' to='/'>Teleconsultations</Link>
-                    <Link className='link' to='/'>SOS Phlebologie</Link>
-                    <Link className='link' to='/'>SOS Vaccinations</Link>
+                    <Link className='link' to='/'></Link>
+                    <Link className='link' to='/'></Link>
+                    <Link className='link' to='/'></Link>
                 </div>
                    <div className="slink">
                      <Link className='link' to='/'>Pharmacies de garde</Link>

@@ -1,17 +1,17 @@
 import React from 'react';
 import back from '../images/back2.png';
 import './Pharmacies.css'
-import {FaHeartbeat} from 'react-icons/fa'
-import {ImArrowRight2} from 'react-icons/im'
 import {FaPhoneAlt} from 'react-icons/fa'
-import image1 from '../images/image1.png'
 import { Button } from '../buttons/Button';
-import medecin from '../images/medecin.png';
 import { Link } from 'react-router-dom';
-import Map from '../Map/Map'
+import swal from 'sweetalert';
+import axios from 'axios';
 import 'normalize.css';
 export const Pharmacies = () => {
   return (
+
+
+
 
 
 
@@ -28,11 +28,11 @@ export const Pharmacies = () => {
                           DE GARDE 24H/24
 
                       </h1>
-                    <p className="text">de Kenitra (75) et en Île-de-Maroc</p>
+                    <p className="text">Urgence medecins kenitra</p>
                    
 
                     <div className="call"><label className="sidetext">appelez-nous!</label>
-                     <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+                     <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
 
                     </div>
                 </div>
@@ -40,9 +40,20 @@ export const Pharmacies = () => {
               
             </div>
    
-          <Map/>
-          
+
     </section> 
+    <section id="data">
+      <div className="container">
+        <h1 className="title">test</h1>
+        <h3 className="date">
+          15/55/0111
+        </h3>
+        <p className="discription">
+          tes 
+          test
+        </p>
+      </div>
+    </section>
 </div>
 
 

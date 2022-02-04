@@ -121,16 +121,55 @@
 #main-Recrutement .contact-m .medecin {
   background-color: #e2e2e246;
   padding: 30px;
-  width: 600px;
-  max-width: 600px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-#main-Recrutement .contact-m .medecin .title {
-  color: black;
-  --max-size: 40;
-  --min-size: 30;
-  font-size: var(--responsive);
+#main-Recrutement .contact-m .medecin .content-cc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 5px;
+}
+
+#main-Recrutement .contact-m .medecin .content-cc .titree {
+  width: 350px;
   text-align: center;
+}
+
+#main-Recrutement .contact-m .medecin .content-cc .titree .content-titre {
+  width: 340px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+#main-Recrutement .contact-m .medecin .content-cc .titree .content-titre .icon-r {
+  width: 70px;
+}
+
+#main-Recrutement .contact-m .medecin .content-cc .titree .content-titre .link .title {
+  color: #0F547E;
+  --max-size: 20;
+  --min-size: 15;
+  font-size: var(--responsive);
+  margin: auto;
+}
+
+#main-Recrutement .contact-m .medecin .content-cc .titree .content-titre .link .title:hover {
+  color: #DF1416;
 }
 
 #main-Recrutement .contact-m .medecin .field-wrapper input[type=text] {

@@ -75,7 +75,12 @@ $primary-font:'Lexend';
       width: 125px;
    
   }
-  
+  @media (max-width:450px) {
+    .nav-logo{
+      width: 90px;
+   
+  }
+  }
 
   .Navbar > .nav-items > .item:hover::before {
     width: 100%;

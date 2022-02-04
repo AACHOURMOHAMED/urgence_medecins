@@ -1,19 +1,26 @@
-import React, { Component} from 'react';
+import React, { useEffect} from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
 import { Card } from '../cards/card';
 import back from '../images/back-medecins.jpg';
 import './Acceuil.css'
- import {FaHeartbeat} from 'react-icons/fa'
+ import {FaCentercode, FaHeartbeat} from 'react-icons/fa'
 import {ImArrowRight2} from 'react-icons/im'
 import {FaPhoneAlt} from 'react-icons/fa'
 import image1 from '../images/image1.png'
 import { Button } from '../buttons/Button';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 
 
 const Acceuil = () => {
 
 
-  
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+    
   return(
       
     <div className='container-body'>
@@ -28,13 +35,12 @@ const Acceuil = () => {
                     <h1 className="title">SOS médecins Kenitra </h1>
                     <p className="text">Visites médicales à domicile</p>
                     <p className="text">consultations</p>
-                    <p className="text">téléconsultations</p>
                     <p className="text">24h/24, 7j/7</p>
 
                     
                 </div>
-                <div className="content-card">
-                        <Card className='card' cardstyle={'card--primary'} cardsize={'card--default'} >
+                <div data-aos={"fade-up-right"}  data-aos-duration="800"  className="content-card">
+                        <Card  className='card' cardstyle={'card--primary'} cardsize={'card--default'} >
                             <h1>Demander une visite
                             a domicile</h1>
                             <div className="buttom-content">
@@ -58,7 +64,7 @@ const Acceuil = () => {
                             </div>
 
                         </Card>
-                        <Card className='card' cardstyle={'card--primary'} cardsize={'card--default'} >
+                        <Card data-aos={"fade-up-right"}  data-aos-duration="800" className='card' cardstyle={'card--primary'} cardsize={'card--default'} >
 
                             <h1>Avez vous une Urgence?</h1>
                             
@@ -88,24 +94,22 @@ const Acceuil = () => {
             <div className="content-sos">
                 <h1 className="title">SOS médecins Kenitra  </h1>
                 <div className="content-small">
-                    <div className="contentt content1">
-                        SOS MEDECINS KENITRA est une structure médicale d’urgence qui assure une permanence de soins 24h/24 et 7j/7 sur Rabat, Salé et Temara Skhirat et ce depuis 2008.
+                    <div data-aos={"fade-up-right"}  data-aos-duration="800" className="contentt content1">
+                        SOS MEDECINS KENITRA est une structure médicale d’urgence qui assure une permanence de soins 24h/24 et 7j/7 sur Kenitra, Salé, sidi yahya el gharb, Sidi Slimane  et Sidi Kacem.
                         SOS MEDECINS KENITRA est un service de garde de médecins généralistes et urgentistes. Nos médecins se déplacent à domicile sur un simple appel téléphonique à notre centrale.
                         SOS MEDECINS KENITRA fait le lien entre le patient et le système de soins, dans une situation d’urgence ou le patient n’a pas accès à son médecin traitant.
                     </div>
-                    <div className="contentt content2">
+                    <div data-aos={"fade-up-right"}  data-aos-duration="800" className="contentt content2">
                         Nos assistants à la régulation médicale bénéficient d’une formation continue à la prise d’appel téléphonique et au traitement de l’information médicale.
                         Nous disposons d’un système informatique de gestion des appels et de la géolocalisation qui permet d’adapter au mieux la réponse donnée aux demandes de visites. Les médecins de garde sont dirigés vers les celles-ci en fonction de leur proximité et du niveau d’urgence de celle-ci.
                     </div>
-                    <div className="contentt content3">
-                        Proposant une prise en charge des urgences médicales  et des soins de médecine générale non programmés, 7j/7 et 24h/24 à Paris (75) ainsi que dans la plupart des communes des départements suivants : Seine-Saint-Denis (93), Hauts-de-Seine (92) et Val-de-Marne (94), SOS Médecins assure les visites de médecine générale, d’urgence , de permanence et de continuité des soins, à votre domicile, sur votre lieu de travail ou encore en l’absence de votre médecin traitant.
+                    <div data-aos={"fade-up-right"}  data-aos-duration="800" className="contentt content3">
+                        Proposant une prise en charge des urgences médicales  et des soins de médecine générale non programmés, 7j/7 et 24h/24 à Kenitra  SOS Médecins assure les visites de médecine générale, d’urgence , de permanence et de continuité des soins, à votre domicile, sur votre lieu de travail ou encore en l’absence de votre médecin traitant.
                     </div>
-                    <div className="contentt content4">
-                        et des soins de médecine générale non programmés 7j/7 et 24h/24 à Paris (75) ainsi que dans la plupart des communes des départements suivants : Seine-Saint-Denis (93), Hauts-de-Seine (92) et Val-de-Marne (94), SOS Médecins assure le
-                    </div>
+                    
                 </div>
-                <div className="call"><label className="sidetext">appelez-nous!</label>
-                    <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+                <div data-aos={"fade-up-right"}  data-aos-duration="800" className="call"><label className="sidetext">appelez-nous!</label>
+                    <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/>0537777333</Button>
                 
                 </div>
                 
@@ -123,15 +127,15 @@ const Acceuil = () => {
         <div className="colorgrad"></div>
         <div className="container">
             <div className="content-praticien">
-                <h1 className="title">VOUS ÊTES PRATICIEN ?</h1>
-                <p className="titre">Rejoignez les équipes de SOS MÉDECINS Kenitra</p>
-                <div className="text-content">
-                    <p className="text">
-                        Vous souhaitez mettre vos compétences médicales au service de particuliers en Île-de-maroc ?.
+                <h1 data-aos={"fade-up-right"}  data-aos-duration="800" className="title">VOUS ÊTES PRATICIEN ?</h1>
+                <p data-aos={"fade-up-right"}  data-aos-duration="800" className="titre">Rejoignez les équipes de SOS MÉDECINS Kenitra</p>
+                <div data-aos={"fade-up-right"}  data-aos-duration="800" className="text-content">
+                    <p data-aos={"fade-up-right"}  data-aos-duration="800" className="text">
+                        Vous souhaitez mettre vos compétences médicales au service de particuliers en Kenitra ?.
                         Nous recherchons régulièrement des médecins généralistes et urgentistes pour assurer des visites à domicile. Ainsi que des téléopérateurs pour la prise en charge des demandes de nos patients et la régulation médicale.
                     </p>
-                    <div className="button-text">
-                     <Button className='btn-text' buttonStyle={'btn--primary'} buttonSize={'btn--med'}>
+                    <div data-aos={"fade-up-right"}  data-aos-duration="800" className="button-text">
+                     <Button  className='btn-text' buttonStyle={'btn--primary'} buttonSize={'btn--med'}>
                         je depose candidature
                     </Button>   
                     </div>
@@ -146,9 +150,12 @@ const Acceuil = () => {
     {/*This is the begin of page facebook*/}
 
     <section id="showcase-facebook">
-
-        <div className="content">
-            <FacebookProvider  appId="346420270442551">
+        <center>
+            <h1 className="title">Rejoignez nous sur notre page facebook</h1>
+        </center>
+        
+        <div data-aos={"fade-up-right"}  data-aos-duration="800" className="content">
+            <FacebookProvider   appId="346420270442551">
                 <Page href="https://www.facebook.com/أفضل-ألعاب-الحاسوب-و-الأندرويد-مجانا-675234572628729/" tabs="timeline"  />
             </FacebookProvider>  
         </div>

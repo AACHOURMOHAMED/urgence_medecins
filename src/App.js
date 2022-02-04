@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 import { Sommesnous } from "./components/Que-sommes-nous/sommesnous";
 import { Pharmacies } from "./components/Pharmacies-de-garde/Pharmacies";
 import  {Contact} from "./components/contact/Contact";
-import { Recrutement } from "./components/Recrutement/Recrutement";
+import  Recrutement  from "./components/Recrutement/Recrutement";
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import back from '../images/back2.png';
 import './sommesnous.css'
 import {FaHeartbeat} from 'react-icons/fa'
@@ -11,13 +11,21 @@ import icon1 from '../images/icon3.png';
 import icon2 from '../images/icon2.png';
 import icon3 from '../images/icon1.png';
 import icon4 from '../images/icon4.png';
-
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 import 'normalize.css';
+import { useEffect } from 'react';
 
 
 
 export const Sommesnous = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className='container-body'>
     {/* // this is main section  */}
@@ -28,16 +36,15 @@ export const Sommesnous = () => {
         
             <div className="container">
                 <div className="content">
-                    <h1 className="title">DÉCOUVREZ NOTRE ASSOCIATION 
-                  SOS MÉDECINS KENITRA
+                    <h1 className="title">Venez découvrir notre équipe
                       </h1>
-                    <p className="text">SOS Médecins est, depuis sa mise en place par le Docteur Marcel Lascar, une structure associative entièrement autofinancée. Nous intervenons pour des urgences médicales générales, hors urgences vitales, grâce à l’intervention rapide de nos médecins généralistes urgentistes dans l’ensemble du territoire français.</p>
+                    <p className="text">Urgences Médecins Kenitra est une structure  entièrement autofinancée. Nous intervenons pour des urgences médicales générales, hors urgences vitales, grâce à l’intervention rapide de nos médecins généralistes urgentistes dans la region de kenitra</p>
                    
 
                     
                 </div>
                 <div className="content-card-nous">
-                  <div className="cardd">
+                  <div data-aos={"fade-up-right"}  data-aos-duration="800" className="cardd">
                     
                         <img src={icon1} alt="medecins" />
                         <h1 className="titre">
@@ -46,7 +53,7 @@ export const Sommesnous = () => {
                         </h1>
                         <AiOutlinePlusCircle className='icon'/>
                   </div>
-                  <div className="cardd">
+                  <div data-aos={"fade-up-right"}  data-aos-duration="800" className="cardd">
                   <img src={icon2} alt="chart" />
                   <h1 className="titre">
                     La charte SOS Médecins
@@ -54,7 +61,7 @@ export const Sommesnous = () => {
                   <AiOutlinePlusCircle className='icon'/>
 
                   </div>
-                  <div className="cardd">
+                  <div data-aos={"fade-up-right"}  data-aos-duration="800" className="cardd">
                   <img src={icon3} alt="kenitra" />
                   <h1 className="titre">
                     SOS Médecins Kenitra
@@ -63,7 +70,7 @@ export const Sommesnous = () => {
                   <AiOutlinePlusCircle className='icon'/>
 
                   </div>
-                  <div className="cardd">
+                  <div data-aos={"fade-up-right"}  data-aos-duration="800" className="cardd">
                   <img src={icon4} alt="medecins" />
                   <h1 className="titre">
                     Qui sont nos médecins ?
@@ -73,8 +80,8 @@ export const Sommesnous = () => {
                   </div>        
 
                 </div>
-                <div className="call"><label className="sidetext">appelez-nous!</label>
-                    <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+                <div  className="call"><label className="sidetext">appelez-nous!</label>
+                    <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
                 
                 </div>
             
@@ -83,16 +90,16 @@ export const Sommesnous = () => {
               <h1 className='top-title'>QUE SOMME NOUS ?</h1>
               <h1 className='title'>SOS MEDECINS KENITRA</h1>
               <div className="notre-content">
-                <div className="notre">
+                <div data-aos={"fade-up-right"}  data-aos-duration="800" className="notre">
                   <h1 className="title">NOTRE VALEURS</h1>
                   <p className="text">
-                  Quotidiennement les équipes de SOS MEDECINS RABAT s’engagent à fournir un service de qualité afin de vous satisfaire.
+                  Quotidiennement les équipes de SOS MEDECINS KENITRA s’engagent à fournir un service de qualité afin de vous satisfaire.
                   </p>
                 </div>
 
 
 
-                <div className="notre">
+                <div data-aos={"fade-up-right"}  data-aos-duration="900" className="notre">
                   <h1 className="title">NOTRE MISSION</h1>
                   <p className="text">
                   Vous simplifier la vie et vous faire gagner du temps tout en vous offrant un service performant de qualité et ciblé à votre demande.                  </p>
@@ -100,7 +107,7 @@ export const Sommesnous = () => {
 
 
 
-                <div className="notre">
+                <div data-aos={"fade-up-right"}  data-aos-duration="1000" className="notre">
                   <h1 className="title">NOTRE VISION</h1>
                   <p className="text">
                   L’amélioration continue de notre plateforme et de notre base de données afin de vous fournir le meilleur de l’information médicinale.
@@ -114,14 +121,14 @@ export const Sommesnous = () => {
             {/*Que somme nous */}
             
           </div>
-          {/*LES 5 POINTS DE LA CHARTE SOS MÉDECINS Kenitra */}
+          {/*LES 5 POINTS DE LA CHARTE SOS MÉDECINS Kenitra*/}
               <div id="showcase-points">
                 <div className="content-pointskenitra">
                   <img src={image1} className='image1' alt="" />
                   <div className="container">
                     <div className="content5">
                     <h1 className="title">LES 5 POINTS DE LA CHARTE SOS 
-                    MÉDECINS Kenitra</h1>
+                      MÉDECINS Kenitra</h1>
                     <div className="content-points">
                       {/* card section */}
                       <div className="card-point">
@@ -195,7 +202,7 @@ export const Sommesnous = () => {
                     <p className="text">
                         Tous nos médecins généralistes urgentistes abordent leur pratique médicale dans un esprit associatif, en mettant en avant la solidarité et le partage avec les patients, mais aussi envers leurs confrères.
                         <br /><br />
-                        Ces médecins urgentistes donnent de leur expérience, de leur compétence et de leur humanisme pour permettre de développer SOS Médecins Grand Paris et ses services. Et surtout, de vous garantir une écoute, un soutien et un accompagnement à chacune de nos interventions médicales d’urgence.
+                        Ces médecins urgentistes donnent de leur expérience, de leur compétence et de leur humanisme pour permettre de développer SOS Médecins  Kenitra et ses services. Et surtout, de vous garantir une écoute, un soutien et un accompagnement à chacune de nos interventions médicales d’urgence.
                     </p>
                   </div>
                 </div>

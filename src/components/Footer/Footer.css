@@ -54,12 +54,12 @@
 
 #Footer .content .left-content .button-footer .call {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 60px;
 }
 
 #Footer .content .left-content .button-footer .btn {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #Footer .content .left-content .button-footer .btn .icon {
@@ -93,7 +93,7 @@
 
 #Footer .content .right-content .slink .link {
   display: block;
-  line-height: 31px;
+  line-height: 39px;
   color: white;
   text-decoration: none;
 }

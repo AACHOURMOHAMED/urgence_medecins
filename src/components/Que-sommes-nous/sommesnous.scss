@@ -225,7 +225,7 @@ $primary-font:'Lexend';
         .title{
             color: $primary-color;
             --max-size: 31;
-            --min-size: 16;
+            --min-size: 25;
             font-size: var(--responsive);
             letter-spacing: 3px;
             font-family: $primary-font;

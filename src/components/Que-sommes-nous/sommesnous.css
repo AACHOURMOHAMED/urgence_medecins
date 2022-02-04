@@ -250,7 +250,7 @@
 #main-nous #showcase-points .content-pointskenitra .title {
   color: #0F547E;
   --max-size: 31;
-  --min-size: 16;
+  --min-size: 25;
   font-size: var(--responsive);
   letter-spacing: 3px;
   font-family: "Lexend";

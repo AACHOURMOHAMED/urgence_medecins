@@ -57,7 +57,7 @@ const Header = () => {
       <div className="navbar">
         <div className="btn">
       
-              <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> <a href="tel:0537777333"> 47 07 77 77 </a></Button>
+              <Button className='btn' buttonSize={'btn--small'}><FaPhoneAlt className='icon'/> <a href="tel:0537777333"> 0537777333 </a></Button>
               
       </div>
        <Navbar/>

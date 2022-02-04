@@ -323,6 +323,10 @@
   padding-bottom: 150px;
 }
 
+#showcase-facebook .title {
+  color: #0F547E;
+}
+
 #showcase-facebook .content {
   margin: auto;
   width: 300px;

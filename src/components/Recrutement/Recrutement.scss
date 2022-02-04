@@ -113,15 +113,49 @@ $primary-font:'Lexend';
         .medecin{
             background-color: #e2e2e246;            
             padding: 30px;
-            width: 600px;
-            max-width: 600px;
-            .title{
-                color: black;
-                --max-size: 40;
-                --min-size: 30;
-                font-size: var(--responsive);
-                text-align: center;
+            width:100%;
+            max-width: 1200px;
+            .content-cc{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap-reverse;
+                gap: 5px;
+                .titree{
+                    width: 350px;
+                    text-align: center;
+                    .content-titre{
+                        width: 340px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                       margin-right: 10px;
+                        
+
+                       .icon-r{
+                            width: 70px;
+                            
+                        }
+                       
+                        .link{
+                            .title{
+                                color: $primary-color;
+                                --max-size: 20;
+                                --min-size: 15;
+                                font-size: var(--responsive);
+                                margin: auto;
+                            
+                            }   
+                            .title:hover{
+                                color: $sec-color;
+                            }
+                        }
+                         
+                    }
+                   
+                }
             }
+            
 
 
 
