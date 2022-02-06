@@ -377,4 +377,99 @@
 #conditions .content .card-conditions .card-cond p {
   color: white;
 }
+
+#travailler {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#travailler .container .title-trav {
+  color: #0F547E;
+  --max-size: 30;
+  --min-size: 20;
+  font-size: var(--responsive);
+  max-width: 900px;
+}
+
+#travailler .container .content-trav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#travailler .container .content-trav .image-trav {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+#travailler .container .content-trav .content {
+  width: 650px;
+  margin: auto;
+}
+
+#travailler .container .content-trav .content .list {
+  line-height: 30px;
+}
+
+#travailler .container .content-trav .content .list .lis {
+  color: #313131;
+  font-size: 18px;
+}
+
+#telecall {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#telecall .container .title-call {
+  color: #0F547E;
+  --max-size: 30;
+  --min-size: 20;
+  font-size: var(--responsive);
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+
+#telecall .container .content-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#telecall .container .content-call .image-call {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+#telecall .container .content-call .content {
+  width: 650px;
+  margin: auto;
+}
+
+#telecall .container .content-call .content .list {
+  line-height: 30px;
+}
+
+#telecall .container .content-call .content .list .lis {
+  color: #313131;
+  font-size: 18px;
+}
 /*# sourceMappingURL=Recrutement.css.map */

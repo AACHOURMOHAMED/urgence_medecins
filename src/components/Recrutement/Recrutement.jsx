@@ -10,6 +10,8 @@ import axios from 'axios'
 import swal from 'sweetalert';
 import apell from '../images/icon-apell.png'
 import doctor from '../images/doctor.png'
+import trav from '../images/52388.jpg'
+import calldoctor from '../images/calldoctor.jpg'
 
 export default class Recrutement extends Component {
 
@@ -205,9 +207,9 @@ render(){
             <div className="container">
                 <div className="content">
                     <h1 className="title">VOUS SOUHAITEZ REJOINDRE SOS MÉDECINS ?</h1>
-                    <p className="text">Découvrez nos annonces médicales et nos modalités de recrutement Urgence Médecins à Kenitra</p>
+                    <p className="text">Découvrez nos annonces médicales et nos modalités de recrutement Urgences Médecins à Kenitra</p>
                     <div className="call"><label className="sidetext">appelez-nous!</label>
-                     <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
+                     <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/>05 37 41 51 55</Button>
                     </div>
                 </div>
             </div>
@@ -482,9 +484,57 @@ render(){
     <br />
     {/* // this is the end of  conditions section  */}
     {/* this is the travailler shez urgence medecins C'est: */}
-      
+      <section id="travailler">
+        <div className="container">
+          <h1 className="title-trav">TRAVAILLER  CHEZ  URGENCES MÉDECINS, C’EST :</h1>
+            <div className="content-trav">
+              <img className='image-trav' src={trav} alt="test"/>
+              <div className="content">
+                
+                <ol className="list">
+                  <li className="lis">Devenir téléopérateur SOS Médecins H/F et être le premier interlocuteur de nos patients</li>
+
+                  <li className="lis">Être le premier maillon de la chaîne de la prise en charge médicale</li>
+
+                  <li className="lis">Savoir accueillir les patients, les rassurer, prioriser le motif d’appel et collecter toutes les informations relatives au bon traitement de celui-ci</li>
+
+                  <li className="lis">Avoir une certaine qualité d’écouteafin d’apporter à nos patients, en plus d’un service médicale accessible et de qualité, un accompagenment et une dimension humaine à notre service médical Urgences Médecins</li>
+                </ol>
+              </div>
+            </div>
+        </div>
+      </section>
     {/* this is the travailler shez urgence medecins C'est: */}
 
+
+
+
+
+
+        {/* this is the LES QUALITÉS ET LES SPÉCIFICITÉS DES TÉLÉOPÉRATEURS SOS MÉDECINS */}
+        <section id="telecall">
+        <div className="container">
+          <h1 className="title-call">LES QUALITÉS ET LES SPÉCIFICITÉS DES TÉLÉOPÉRATEURS SOS MÉDECINS
+          </h1>
+            <div className="content-call">
+           
+              <div className="content">
+                
+                <ol className="list">
+                  <li className="lis">Le standard téléphonique SOS Médecins est ouvert 7j/7, 24h/24 : 365 jours/an.</li>
+
+                  <li className="lis">Le travail s’organise en horaires décalés du lundi au dimanche, horaires pouvant convenir également aux étudiants disponibles les week-ends et les vacances scolaires.</li>
+
+                  <li className="lis">La formation de téléopérateur SOS Médecins est assurée en interne</li>
+
+               
+                </ol>
+              </div>
+              <img className='image-call'  src={calldoctor}  alt="test"/>
+            </div>
+        </div>
+      </section>
+    {/* this is theLES QUALITÉS ET LES SPÉCIFICITÉS DES TÉLÉOPÉRATEURS SOS MÉDECINS */}
 </div>
 
 

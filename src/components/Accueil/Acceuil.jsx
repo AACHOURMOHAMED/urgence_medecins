@@ -39,7 +39,7 @@ const Acceuil = () => {
 
                     
                 </div>
-                <div data-aos={"fade-up-right"}  data-aos-duration="800"  className="content-card">
+                <div   className="content-card">
                         <Card  className='card' cardstyle={'card--primary'} cardsize={'card--default'} >
                             <h1>Demander une visite
                             a domicile</h1>

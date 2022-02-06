@@ -342,3 +342,95 @@ $primary-font:'Lexend';
         }
     }
 }
+
+// End of conditions section
+
+
+//start of travailler section
+
+#travailler{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    .container{
+         .title-trav{
+                    color: $primary-color;
+                    --max-size: 30;
+                    --min-size: 20;
+                    font-size: var(--responsive);
+                    max-width: 900px;
+            }
+        .content-trav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .image-trav{
+                width: 100%;
+                max-width: 400px;
+                margin: auto;
+            }
+               
+            .content{
+                width: 650px;
+                margin: auto;
+                
+
+                .list{
+                    line-height: 30px;
+                    .lis{
+                        color: #313131;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End of travailler section
+
+
+
+
+//start of call section
+
+#telecall{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    .container{
+         .title-call{
+                    color: $primary-color;
+                    --max-size: 30;
+                    --min-size: 20;
+                    font-size: var(--responsive);
+                    max-width: 900px;
+                    margin-bottom: 50px;
+            }
+        .content-call{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .image-call{
+                width: 100%;
+                max-width: 500px;
+                margin: auto;
+            }
+               
+            .content{
+                width: 650px;
+                margin: auto;
+                
+                .list{
+                    line-height: 30px;
+                    .lis{
+                        color: #313131;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End of travailler section
