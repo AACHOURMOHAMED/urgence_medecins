@@ -373,13 +373,13 @@ $primary-font:'Lexend';
             .content{
                 width: 650px;
                 margin: auto;
-                
+                width: 90%;
 
                 .list{
                     line-height: 30px;
                     .lis{
                         color: #313131;
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -420,12 +420,13 @@ $primary-font:'Lexend';
             .content{
                 width: 650px;
                 margin: auto;
+                width: 90%;
                 
                 .list{
                     line-height: 30px;
                     .lis{
                         color: #313131;
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -433,4 +434,4 @@ $primary-font:'Lexend';
     }
 }
 
-// End of travailler section
+// End of call section

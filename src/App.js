@@ -10,6 +10,7 @@ import { Sommesnous } from "./components/Que-sommes-nous/sommesnous";
 import { Pharmacies } from "./components/Pharmacies-de-garde/Pharmacies";
 import  {Contact} from "./components/contact/Contact";
 import  Recrutement  from "./components/Recrutement/Recrutement";
+import { Btn } from "./components/btn-call/btn";
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <Router>
      <Header/>
      <hr></hr>
+     <Btn/>
      <Redirect path="/"/>
      <Switch>
      

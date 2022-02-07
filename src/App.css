@@ -36,3 +36,23 @@ hr{
   height: 1px;
   background-color: #ffffffa6;
 }
+
+#btn{
+  background-color: #DF1416;
+  padding: 10px 30px;
+  z-index: 999;
+}
+
+#btnn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  background-color: #DF1416;
+  padding: 10px 30px;
+  z-index: 999;
+}
+
+

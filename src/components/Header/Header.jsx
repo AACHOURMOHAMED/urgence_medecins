@@ -57,7 +57,7 @@ const Header = () => {
       <div className="navbar">
         <div className="btn">
       
-             <a href="tel:0537777333"><FaPhoneAlt className='icon'/> 0537777333 </a>
+             <a id="btn" href="tel:0537777333">0537777333 </a>
               
       </div>
        <Navbar/>
