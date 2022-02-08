@@ -48,7 +48,7 @@ const Header = () => {
         
         <Link className='item' to='/Acceuil'>Accueil</Link> 
         <Link className='item' to='/Sommenous'>Qui sommes-nous ?</Link>  
-        <Link className='item' to='/'>Nos services</Link>  
+        <Link className='item' to='/noservices'>Nos services</Link>  
         <Link className='item' to='/Pharmacies'>Pharmacies de garde</Link>  
         <Link className='item' to='/Recrutement'>Recrutement</Link>  
         <Link className='item' to='/Contact'>Contact</Link>  

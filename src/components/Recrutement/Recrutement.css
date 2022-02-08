@@ -383,6 +383,10 @@
   margin-bottom: 150px;
 }
 
+#travailler .container {
+  width: 90%;
+}
+
 #travailler .container .title-trav {
   color: #0F547E;
   --max-size: 30;
@@ -414,7 +418,6 @@
 #travailler .container .content-trav .content {
   width: 650px;
   margin: auto;
-  width: 90%;
 }
 
 #travailler .container .content-trav .content .list {
@@ -429,6 +432,10 @@
 #telecall {
   margin-top: 150px;
   margin-bottom: 150px;
+}
+
+#telecall .container {
+  width: 90%;
 }
 
 #telecall .container .title-call {
@@ -463,7 +470,6 @@
 #telecall .container .content-call .content {
   width: 650px;
   margin: auto;
-  width: 90%;
 }
 
 #telecall .container .content-call .content .list {

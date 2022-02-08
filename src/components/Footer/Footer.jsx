@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                     <div className="button-footer">
                         <label className="call">appelez-nous!</label>
-                        <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/> 0537777333</Button>
+                        <a id="btn" href="tel:0537777333"><FaPhoneAlt className='icon' id="ic"/> 0537777333 </a>
                     </div>
                 </div>
                 <div className="right-content">{/*this the right content of the footer */}

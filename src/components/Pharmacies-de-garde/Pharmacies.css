@@ -104,4 +104,46 @@
 #main-Pharmacies .call .btn .icon {
   margin-right: 10px;
 }
+
+#data .title {
+  --max-size: 40;
+  --min-size: 26;
+  font-size: var(--responsive);
+  font-family: "Lexend";
+  color: #0F547E;
+  margin-bottom: 70px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 100px;
+}
+
+#data .content-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4em;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+#data .content-f .content {
+  margin-right: 10px;
+  background-color: #f3f3f3;
+  padding: 30px;
+  line-height: 28px;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+#data .content-f .content h3 {
+  color: #DF1416;
+}
+
+#data .ph {
+  width: 100%;
+  margin-bottom: 250px;
+}
 /*# sourceMappingURL=Pharmacies.css.map */

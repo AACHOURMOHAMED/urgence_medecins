@@ -146,6 +146,7 @@ handleChange = (e) => {
     console.log(e.target.value)
 }
 
+
 // submit handler
 submitHandler = (e) => {
     e.preventDefault();
@@ -154,7 +155,6 @@ submitHandler = (e) => {
     data.append('prenom' , this.state.prenom)
     data.append('nom' , this.state.nom)
     data.append('medecin' , this.state.medecin)
-    data.append('teleperateur' , this.state.teleperateur)
     data.append('Adresse' , this.state.Adresse)
     data.append('Cadresse' , this.state.Cadresse)
     data.append('ville' , this.state.ville)
@@ -287,7 +287,7 @@ render(){
               <div className="field-wrapper">
                 <input 
                 className='check check1' 
-                type="checkbox"  
+                type="radio"  
                 name='medecin' 
              
                 onChange={this.handleMedecin}
@@ -304,8 +304,8 @@ render(){
               <div className="field-wrapper">
                 <input 
                 className='check check2' 
-                type="checkbox"  
-                name='teleperateur' 
+                type="radio"  
+                name='medecin' 
             
                 onChange={this.handleTeleperateur}
                  value='teleperateur'

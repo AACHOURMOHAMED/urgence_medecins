@@ -1,7 +1,9 @@
 import React, { useEffect} from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
 import { Card } from '../cards/card';
-import back from '../images/back-medecins.jpg';
+import back from '../images/back.png';
+import backs from '../images/back-medecins.jpg';
+
 import './Acceuil.css'
  import {FaCentercode, FaHeartbeat} from 'react-icons/fa'
 import {ImArrowRight2} from 'react-icons/im'
@@ -32,7 +34,7 @@ const Acceuil = () => {
         
             <div className="container">
                 <div className="content">
-                    <h1 className="title">SOS médecins Kenitra </h1>
+                    <h1 className="title">Urgences médecins Kenitra </h1>
                     <p className="text">Visites médicales à domicile</p>
                     <p className="text">consultations</p>
                     <p className="text">24h/24, 7j/7</p>
@@ -85,26 +87,26 @@ const Acceuil = () => {
 
 
 
-    {/* //this sos mediecns kenitra section  */}
+    {/* //this Urgences mediecns kenitra section  */}
     
     <section id="sos-medecins">
         <div className="colorgrad"></div>
         <img src={image1} alt="the first image" className="image1" />
         <div className="container">
             <div className="content-sos">
-                <h1 className="title">SOS médecins Kenitra  </h1>
+                <h1 className="title">Urgences médecins Kenitra  </h1>
                 <div className="content-small">
                     <div data-aos={"fade-up-right"}  data-aos-duration="800" className="contentt content1">
-                        SOS MEDECINS KENITRA est une structure médicale d’urgence qui assure une permanence de soins 24h/24 et 7j/7 sur Kenitra, Salé, sidi yahya el gharb, Sidi Slimane  et Sidi Kacem.
-                        SOS MEDECINS KENITRA est un service de garde de médecins généralistes et urgentistes. Nos médecins se déplacent à domicile sur un simple appel téléphonique à notre centrale.
-                        SOS MEDECINS KENITRA fait le lien entre le patient et le système de soins, dans une situation d’urgence ou le patient n’a pas accès à son médecin traitant.
+                        Urgences MEDECINS KENITRA est une structure médicale d’urgence qui assure une permanence de soins 24h/24 et 7j/7 sur Kenitra, Salé, sidi yahya el gharb, Sidi Slimane  et Sidi Kacem.
+                        Urgences MEDECINS KENITRA est un service de garde de médecins généralistes et urgentistes. Nos médecins se déplacent à domicile sur un simple appel téléphonique à notre centrale.
+                        Urgences MEDECINS KENITRA fait le lien entre le patient et le système de soins, dans une situation d’urgence ou le patient n’a pas accès à son médecin traitant.
                     </div>
                     <div data-aos={"fade-up-right"}  data-aos-duration="800" className="contentt content2">
                         Nos assistants à la régulation médicale bénéficient d’une formation continue à la prise d’appel téléphonique et au traitement de l’information médicale.
                         Nous disposons d’un système informatique de gestion des appels et de la géolocalisation qui permet d’adapter au mieux la réponse donnée aux demandes de visites. Les médecins de garde sont dirigés vers les celles-ci en fonction de leur proximité et du niveau d’urgence de celle-ci.
                     </div>
                     <div data-aos={"fade-up-right"}  data-aos-duration="800" className="contentt content3">
-                        Proposant une prise en charge des urgences médicales  et des soins de médecine générale non programmés, 7j/7 et 24h/24 à Kenitra  SOS Médecins assure les visites de médecine générale, d’urgence , de permanence et de continuité des soins, à votre domicile, sur votre lieu de travail ou encore en l’absence de votre médecin traitant.
+                        Proposant une prise en charge des urgences médicales  et des soins de médecine générale non programmés, 7j/7 et 24h/24 à Kenitra  Urgences Médecins assure les visites de médecine générale, d’urgence , de permanence et de continuité des soins, à votre domicile, sur votre lieu de travail ou encore en l’absence de votre médecin traitant.
                     </div>
                     
                 </div>
@@ -117,18 +119,18 @@ const Acceuil = () => {
             </div>
         </div>
     </section>
-    {/*The end of sos medecins section kenitra*/}
+    {/*The end of Urgences medecins section kenitra*/}
 
     
     {/*vous etes praticien section */}
 
     <section id="showcase-praticien">
-        <img src={back} alt="backgound of the page" className="backk" />
+        <img src={backs} alt="backgound of the page" className="backk" />
         <div className="colorgrad"></div>
         <div className="container">
             <div className="content-praticien">
                 <h1 data-aos={"fade-up-right"}  data-aos-duration="800" className="title">VOUS ÊTES PRATICIEN ?</h1>
-                <p data-aos={"fade-up-right"}  data-aos-duration="800" className="titre">Rejoignez les équipes de SOS MÉDECINS Kenitra</p>
+                <p data-aos={"fade-up-right"}  data-aos-duration="800" className="titre">Rejoignez les équipes de Urgences MÉDECINS Kenitra</p>
                 <div data-aos={"fade-up-right"}  data-aos-duration="800" className="text-content">
                     <p data-aos={"fade-up-right"}  data-aos-duration="800" className="text">
                         Vous souhaitez mettre vos compétences médicales au service de particuliers en Kenitra ?.

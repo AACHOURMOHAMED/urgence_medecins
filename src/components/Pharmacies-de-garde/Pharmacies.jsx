@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import back from '../images/back2.png';
 import './Pharmacies.css'
 import {FaPhoneAlt} from 'react-icons/fa'
@@ -7,12 +7,38 @@ import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
 import axios from 'axios';
 import 'normalize.css';
+import ph from '../images/ph.jpg'
 export const Pharmacies = () => {
+  
+  
+
+
+const [repo, setRepo] = useState([]);
+
+const getRepo = () =>{
+  axios.get('http://localhost:8000/api/pharmacies')
+  .then(response => {
+  const myRepo = response.data[0];
+  console.log(myRepo)
+  setRepo(myRepo);
+  })
+}
+
+
+useEffect(() => getRepo(),[]);
+
+
+
+
+
+
+
+
   return (
 
 
 
-
+    
 
 
 <div className='container-body'>
@@ -39,21 +65,33 @@ export const Pharmacies = () => {
                 
               
             </div>
-   
+  </section>  
+{/* ***************************************************************************************** */}
 
-    </section> 
     <section id="data">
       <div className="container">
-        <h1 className="title">test</h1>
-        <h3 className="date">
-          15/55/0111
-        </h3>
-        <p className="discription">
-          tes 
-          test
-        </p>
+        <h1 className="title">Pharmacies de gard</h1>
+        <div className="content-f">
+          
+        {repo.map((pharmacies) => (
+          
+            <div className="content">  
+            
+            <h3>{pharmacies.designation}</h3>
+            <b>{pharmacies.date}</b><br />
+             {pharmacies.description}
+          </div>
+          
+          
+          
+
+        ))}
+        </div>
+        <img className='ph' src={ph} alt="" />
       </div>
     </section>
+{/* ***************************************************************************************** */}
+
 </div>
 
 

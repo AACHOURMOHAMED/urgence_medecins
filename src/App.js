@@ -11,6 +11,7 @@ import { Pharmacies } from "./components/Pharmacies-de-garde/Pharmacies";
 import  {Contact} from "./components/contact/Contact";
 import  Recrutement  from "./components/Recrutement/Recrutement";
 import { Btn } from "./components/btn-call/btn";
+import { NoServises } from "./components/notreServices/NoServises";
 
 
 
@@ -34,6 +35,9 @@ function App() {
       </Route>
       <Route exact path='/Acceuil' component={Acceuil}>
         <Acceuil/>
+      </Route>
+      <Route  path='/noservices' component={NoServises}>
+        <NoServises/>
       </Route>
       <Route  path='/Sommenous' component={Sommesnous}>
         <Sommesnous/>

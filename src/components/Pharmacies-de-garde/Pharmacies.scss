@@ -103,3 +103,48 @@ $primary-font:'Lexend';
     }
     
   }
+
+
+
+  // data section
+#data{
+  .title{
+    --max-size: 40;
+    --min-size: 26;
+    font-size: var(--responsive);
+    font-family: $primary-font;
+    color: $primary-color;
+    margin-bottom: 70px;  
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 100px;
+  }
+  .content-f{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    .content{
+      margin-right: 10px;
+      background-color: #f3f3f3;
+      padding: 30px;
+      line-height: 28px;
+      border-radius: 10px;
+      min-width: 300px;
+      max-width: 350px;
+
+      
+      h3{
+        color: $sec-color;
+      }
+    }
+  }
+
+  .ph{
+    width: 100%;
+    margin-bottom: 250px;
+  }
+}
+
+  //End of  data section

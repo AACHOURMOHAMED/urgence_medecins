@@ -352,6 +352,7 @@ $primary-font:'Lexend';
     margin-top: 150px;
     margin-bottom: 150px;
     .container{
+        width: 90%;
          .title-trav{
                     color: $primary-color;
                     --max-size: 30;
@@ -373,7 +374,7 @@ $primary-font:'Lexend';
             .content{
                 width: 650px;
                 margin: auto;
-                width: 90%;
+               
 
                 .list{
                     line-height: 30px;
@@ -397,7 +398,8 @@ $primary-font:'Lexend';
 #telecall{
     margin-top: 150px;
     margin-bottom: 150px;
-    .container{
+    .container{ 
+        width: 90%;
          .title-call{
                     color: $primary-color;
                     --max-size: 30;
@@ -411,6 +413,7 @@ $primary-font:'Lexend';
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+           
             .image-call{
                 width: 100%;
                 max-width: 500px;
@@ -420,7 +423,7 @@ $primary-font:'Lexend';
             .content{
                 width: 650px;
                 margin: auto;
-                width: 90%;
+                
                 
                 .list{
                     line-height: 30px;

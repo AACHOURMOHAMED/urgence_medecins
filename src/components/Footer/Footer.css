@@ -12,6 +12,7 @@
   height: 100%;
   font-family: "Lexend";
   position: relative;
+  z-index: 996;
 }
 
 #Footer .content {
@@ -37,6 +38,7 @@
 #Footer .content .left-content .text {
   max-width: 653px;
   font-size: 16px;
+  text-align: justify;
   color: white;
 }
 

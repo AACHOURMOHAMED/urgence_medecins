@@ -1,0 +1,82 @@
+* {
+  /* Calculation */
+  --diff: calc(var(--max-size) - var(--min-size));
+  --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420)));
+  /* Ranges from 421px to 1199px */
+}
+
+#visite {
+  font-family: "Lexend";
+  margin-bottom: 150px;
+}
+
+#visite .back {
+  overflow: hidden;
+  width: 100%;
+  margin-top: -70px;
+  z-index: -110;
+  position: relative;
+  height: 100%;
+  max-height: 700px;
+}
+
+#visite .content-visite {
+  font-family: "Lexend";
+}
+
+#visite .content-visite .pic {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  margin-top: 70px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#visite .content-visite .title {
+  color: #0F547E;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+#visite .content-visite .content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#visite .content-visite .content label {
+  margin: auto;
+  color: #6e6e6e;
+}
+
+#visite .content-visite .content .text-visite {
+  margin: auto;
+  text-align: justify;
+  color: #313131;
+  line-height: 32px;
+  font-size: 20px;
+  width: 100%;
+}
+
+#visite .content-que {
+  line-height: 39px;
+}
+
+#visite .content-que .text {
+  margin: auto;
+  text-align: justify;
+  color: #313131;
+  line-height: 30px;
+  font-size: 20px;
+  width: 100%;
+}
+
+#visite .content-que .text #t {
+  color: #313131;
+  text-decoration: none;
+}
+
+#visite .content-que li {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=services.css.map */
