@@ -134,18 +134,26 @@
   margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #main-nous .call .sidetext {
   font-size: 35px;
   font-weight: 600;
   margin-right: 50px;
-  padding-bottom: 40px;
   font-family: "Lexend";
   color: #DF1416;
+  margin-bottom: 30px;
 }
 
-#main-nous .call .btn {
+#main-nous .call #btn {
   font-size: 24px;
   font-weight: 600;
   -webkit-box-align: center;
@@ -154,7 +162,7 @@
   border-radius: 5px;
 }
 
-#main-nous .call .btn .icon {
+#main-nous .call #btn .icon {
   margin-right: 10px;
 }
 

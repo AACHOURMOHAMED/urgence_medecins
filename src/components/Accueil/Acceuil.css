@@ -6,16 +6,16 @@
 }
 
 #main {
-  margin-top: -80px;
-  overflow: hidden;
+  margin-top: -70px;
   position: relative;
+  overflow: hidden;
   height: 100%;
 }
 
 #main .back {
   overflow: hidden;
-  width: 111.5%;
-  min-width: 1800px;
+  width: 110%;
+  min-width: 1400px;
   z-index: -111;
   position: relative;
   max-height: 1080px;
@@ -59,7 +59,33 @@
   color: white;
 }
 
+@media (max-width: 1650px) {
+  #main .back {
+    z-index: -111;
+    position: relative;
+    height: 900px;
+  }
+  #main .content-card {
+    margin-top: -25em;
+    margin-bottom: 2em;
+  }
+  #main .content-card .card {
+    border-radius: 10px;
+    margin: auto;
+  }
+  #sos-medecins .image1 {
+    margin-top: -0px;
+  }
+}
+
 @media (max-width: 900px) {
+  #main .back {
+    width: 110%;
+    height: 1100px;
+  }
+  #main .content {
+    margin-top: 150px;
+  }
   #main .content-card {
     margin-top: -40em;
     margin-bottom: 2em;

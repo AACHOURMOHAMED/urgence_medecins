@@ -8,6 +8,8 @@ import './Acceuil.css'
  import {FaCentercode, FaHeartbeat} from 'react-icons/fa'
 import {ImArrowRight2} from 'react-icons/im'
 import {FaPhoneAlt} from 'react-icons/fa'
+import {BsCalendarWeekFill} from 'react-icons/bs'
+
 import image1 from '../images/image1.png'
 import { Button } from '../buttons/Button';
 import AOS from 'aos';
@@ -47,7 +49,7 @@ const Acceuil = () => {
                             a domicile</h1>
                             <div className="buttom-content">
                      
-                                <FaHeartbeat className='icon'></FaHeartbeat>
+                                <BsCalendarWeekFill className='icon'></BsCalendarWeekFill>
                                 <button className='btn-circle'>
                                     <ImArrowRight2 className='icon1'></ImArrowRight2>
                                 </button>
@@ -71,7 +73,7 @@ const Acceuil = () => {
                             <h1>Avez vous une Urgence?</h1>
                             
                             <div className="buttom-content">
-                                <FaHeartbeat className='icon'></FaHeartbeat>
+                                <a href="tel:0537777333"><FaPhoneAlt className='icon'></FaPhoneAlt></a>
                                 <button className='btn-circle'>
                                     <ImArrowRight2 className='icon1'></ImArrowRight2>
                                 </button>
@@ -111,7 +113,7 @@ const Acceuil = () => {
                     
                 </div>
                 <div data-aos={"fade-up-right"}  data-aos-duration="800" className="call"><label className="sidetext">appelez-nous!</label>
-                    <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/>0537777333</Button>
+                <a id="btn" href="tel:0537777333"><FaPhoneAlt className='icon' id="ic"/> 0537777333 </a>
                 
                 </div>
                 

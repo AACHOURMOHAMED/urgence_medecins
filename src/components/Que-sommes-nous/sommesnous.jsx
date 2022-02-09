@@ -80,9 +80,9 @@ export const Sommesnous = () => {
                   </div>        
 
                 </div>
-                <div  className="call"><label className="sidetext">appelez-nous!</label>
-                    <Button className='btn' buttonSize={'btn--med'}><FaPhoneAlt className='icon'/> 47 07 77 77</Button>
-                
+                <div  className="call">
+                  <label className="sidetext">appelez-nous!</label>
+                  <a id="btn" href="tel:0537777333"><FaPhoneAlt className='icon' id="ic"/> 0537777333 </a>
                 </div>
             
             {/*Que somme nous */}

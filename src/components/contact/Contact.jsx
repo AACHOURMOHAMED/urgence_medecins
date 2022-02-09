@@ -173,7 +173,7 @@ function sendEmail(e){
                       {/* Single item */}
 
                         <br />
-                        <input className='check check1' type="checkbox" value="Duplicata ou problème de feuille de soins" name='check' required/> 
+                        <input className='check check1' type="checkbox" value="Duplicata ou problème de feuille de soins" name='check' /> 
                         <label className='text-check'   htmlFor="check">Duplicata ou problème de feuille de soins</label>
                         <br />
                         <input className='check check2'  type="checkbox" value=" Duplicata ou problème d’arrêt de travail" name='check1' />
@@ -207,7 +207,7 @@ function sendEmail(e){
                         <ReCAPTCHAForm />
 
                         <br />
-                      <input className='btn' type="submit" value="Send"
+                      <input className='btn' type="submit" value="Envoyer"
                        />
 
                     </form>

@@ -52,7 +52,7 @@ const Footer = () => {
                
             </div>
              <div className="bottom-footer">
-                    <label className='text-bottom'><span>©</span> 2022 SOS MEDECINS - Mentions légales - Protection de la vie privée - Cookies - Réalisé par Solocal</label>
+                    <label className='text-bottom'><span>©</span> 2022 URGENCES MEDECINS KENITRA</label>
                 </div>
         </div>
     </footer>

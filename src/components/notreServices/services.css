@@ -29,8 +29,9 @@
   top: 0;
   margin: auto;
   margin-top: 70px;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
+  margin-bottom: 50px;
 }
 
 #visite .content-visite .title {

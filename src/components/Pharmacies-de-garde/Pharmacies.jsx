@@ -70,12 +70,12 @@ useEffect(() => getRepo(),[]);
 
     <section id="data">
       <div className="container">
-        <h1 className="title">Pharmacies de gard</h1>
+        <h1 className="title">Pharmacies de garde kenitra</h1>
         <div className="content-f">
           
         {repo.map((pharmacies) => (
           
-            <div className="content">  
+          <div className="content">  
             
             <h3>{pharmacies.designation}</h3>
             <b>{pharmacies.date}</b><br />
