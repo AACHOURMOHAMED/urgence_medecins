@@ -1,13 +1,15 @@
 import React from 'react';
 import pic from '../images/plan_2.png'
 import back from '../images/back.png';
+import width from '../images/width.jpeg';
+import hieght from '../images/hieght.jpeg';
+
+
 import './services.css'
 export const NoServises = () => {
   return (
- 
     
-       
-        
+    
         
     <div className="container-body">
         {/* card pages */}
@@ -21,6 +23,7 @@ export const NoServises = () => {
               <div className="container">
               <img className='pic' src={pic} alt="visite a doctor" />
               <div className="content">
+                 <center><h1 className="title">Nos services</h1></center> 
                   <label >Urgences medecins kenitra</label>
                   <h1 className="title">VISITES MÉDICALES À DOMICILE</h1>                                         
                   <p className="text-visite">
@@ -38,24 +41,26 @@ export const NoServises = () => {
             
 
             <div className="content-que">
-              <h1 className="title">QUE DOIS-JE FAIRE AVANT D’APPELER ?</h1>
-              <p className="text">Lors de la prise en charge de votre appel par l’accueil téléphonique de Urgences MEDECINS kenitra nous allons vous demander :</p>
-              <li>L’identité précise du malade</li>
-              <li>L’adresse exacte du lieu de visite</li>
-              <li>Le motif de votre appel.</li>
-              <li>Le numéro de téléphone du lieu de la visite (gardez le téléphone près de vous de façon à être facilement joignable)</li>
-              <p className="text">Vous devez impérativement rester à votre domicile, en attendant l’arrivée du médecin.</p>
-              <p className="text">Lors de votre appel, indiquez toute information susceptible d’aider le médecin à vous trouver, tout repère géographique.</p>
-              <p className="text">Pour préparer efficacement la visite médicale et permettre de gagner du temps, il est important que vous prépariez :</p>
-              <li>les ordonnances de votre traitement habituel et les derniers médicaments prescrits.</li>
-              <li>Tout document médical permettant de mieux comprendre vos problèmes de santé (bilans biologiques, radiographies, courriers médicaux…)</li>
-              <li>Carnet de santé de l’enfant.</li>
-              <h1 className="title">VOTRE SANTÉ, NOTRE PRIORITÉ</h1>
-              <p className="text">
-              Vous pouvez nous joindre au :<a id='t' href='tel:0537777333'>0537.777.333</a> . Nos régulateurs vous assisteront pour obtenir l’aide adaptée au plus vite. Au même numéro et à tout moment vous avez également la possibilité de joindre un médecin pour un conseil téléphonique gratuit.
-              Nous prenons en charge tout type de consultation médicale.
-              Nos visites sont remboursées par les différentes caisses d’assurance maladie.
-              </p>
+                  <img className='h' src={hieght} alt="UMK URGENCES MEDECALES" />
+                  <img className='w' src={width} alt="UMK URGENCES MEDECALES" />
+                  <h1 className="title">QUE DOIS-JE FAIRE AVANT D’APPELER ?</h1>
+                  <p className="text">Lors de la prise en charge de votre appel par l’accueil téléphonique de Urgences MEDECINS kenitra nous allons vous demander :</p>
+                  <li>L’identité précise du malade</li>
+                  <li>L’adresse exacte du lieu de visite</li>
+                  <li>Le motif de votre appel.</li>
+                  <li>Le numéro de téléphone du lieu de la visite (gardez le téléphone près de vous de façon à être facilement joignable)</li>
+                  <p className="text">Vous devez impérativement rester à votre domicile, en attendant l’arrivée du médecin.</p>
+                  <p className="text">Lors de votre appel, indiquez toute information susceptible d’aider le médecin à vous trouver, tout repère géographique.</p>
+                  <p className="text">Pour préparer efficacement la visite médicale et permettre de gagner du temps, il est important que vous prépariez :</p>
+                  <li>les ordonnances de votre traitement habituel et les derniers médicaments prescrits.</li>
+                  <li>Tout document médical permettant de mieux comprendre vos problèmes de santé (bilans biologiques, radiographies, courriers médicaux…)</li>
+                  <li>Carnet de santé de l’enfant.</li>
+                  <h1 className="title">VOTRE SANTÉ, NOTRE PRIORITÉ</h1>
+                  <p className="text">
+                  Vous pouvez nous joindre au :<a id='t' href='tel:0537777333'>0537.777.333</a> . Nos régulateurs vous assisteront pour obtenir l’aide adaptée au plus vite. Au même numéro et à tout moment vous avez également la possibilité de joindre un médecin pour un conseil téléphonique gratuit.
+                  Nous prenons en charge tout type de consultation médicale.
+                  Nos visites sont remboursées par les différentes caisses d’assurance maladie.
+                  </p>
             </div>
           </div>
         </div>

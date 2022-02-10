@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 import { FacebookProvider, Page } from 'react-facebook';
 import { Card } from '../cards/card';
-import back from '../images/back.png';
+import back from '../images/back.jpg';
 import backs from '../images/back-medecins.jpg';
 
 import './Acceuil.css'

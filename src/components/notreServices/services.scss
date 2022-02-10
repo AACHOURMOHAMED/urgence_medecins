@@ -59,10 +59,17 @@ $primary-font:'Lexend';
          }
          
      }
-
+        
      .content-que{
          line-height: 39px;
-
+       .w{
+            display: none;
+        }
+        .h{
+            width: 300px;
+            float: left;
+            margin-right: 50px;
+        }
          .text{
             margin: auto;
             text-align: justify;
@@ -82,4 +89,38 @@ $primary-font:'Lexend';
          }
          
      }
+}
+
+@media (max-width:800px){
+    #visite{
+        .content-que{
+            line-height: 39px;
+          .w{
+              width: 100%;
+              display: block;
+              margin-bottom: 50px;
+           }
+           .h{
+               display: none;
+           }
+            .text{
+               margin: auto;
+               text-align: justify;
+               color: #313131;
+               line-height: 30px;
+               font-size: 20px;
+               width: 100%;
+               
+               #t{
+                color: #313131 ;
+                text-decoration: none;
+                
+               }
+            }
+            li{
+                margin-left:20px ;
+            }
+            
+        }
+    }
 }

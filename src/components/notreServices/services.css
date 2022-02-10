@@ -63,6 +63,16 @@
   line-height: 39px;
 }
 
+#visite .content-que .w {
+  display: none;
+}
+
+#visite .content-que .h {
+  width: 300px;
+  float: left;
+  margin-right: 50px;
+}
+
 #visite .content-que .text {
   margin: auto;
   text-align: justify;
@@ -79,5 +89,34 @@
 
 #visite .content-que li {
   margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+  #visite .content-que {
+    line-height: 39px;
+  }
+  #visite .content-que .w {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+  }
+  #visite .content-que .h {
+    display: none;
+  }
+  #visite .content-que .text {
+    margin: auto;
+    text-align: justify;
+    color: #313131;
+    line-height: 30px;
+    font-size: 20px;
+    width: 100%;
+  }
+  #visite .content-que .text #t {
+    color: #313131;
+    text-decoration: none;
+  }
+  #visite .content-que li {
+    margin-left: 20px;
+  }
 }
 /*# sourceMappingURL=services.css.map */
